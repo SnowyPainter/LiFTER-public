@@ -1,0 +1,41 @@
+{
+  "dataset": "wikipedia",
+  "queries": 4916,
+  "eligible_tamper_queries": 4908,
+  "clean_acceptance": 1.0,
+  "trace_completeness": 1.0,
+  "grounding_validity": 1.0,
+  "temporal_validity": 1.0,
+  "clean_failure_counts": {},
+  "generation_ms_per_query": 16.82372068784725,
+  "verification_ms_per_query": 0.34583867182750544,
+  "tamper_detection": {
+    "entity_change": 1.0,
+    "timestamp_change": 1.0,
+    "fact_omission": 1.0,
+    "fact_insertion": 1.0,
+    "contribution_change": 1.0,
+    "duplicate_with_logit_compensation": 1.0,
+    "execution_omission_with_logit_compensation": 1.0,
+    "contribution_redistribution": 1.0,
+    "operand_contribution_logit": 1.0,
+    "temporal_order_with_operand_swap": 1.0
+  },
+  "max_clean_logit_error": 1.0033307823675841e-05,
+  "tamper_eligible": {
+    "entity_change": 4908,
+    "timestamp_change": 4908,
+    "fact_omission": 4908,
+    "fact_insertion": 4908,
+    "contribution_change": 4908,
+    "duplicate_with_logit_compensation": 4908,
+    "execution_omission_with_logit_compensation": 4908,
+    "contribution_redistribution": 4586,
+    "operand_contribution_logit": 4586,
+    "temporal_order_with_operand_swap": 4379
+  },
+  "positive_control_acceptance": {
+    "execution_permutation": 1.0,
+    "json_roundtrip": 1.0
+  }
+}

@@ -1,0 +1,58 @@
+seed: 7
+dataset: mooc
+model: LiFTER
+variant: base
+implementation: reference
+device: auto
+
+training:
+  epochs: 10
+  batch_size: 512
+  learning_rate: 0.004
+  weight_decay: 0.00001
+  dropout: 0.1
+  history_len: 128
+  eval_ratio: 0.15
+  max_examples: 32768
+  progress: false
+
+model_config:
+  num_nodes: auto
+  edge_feat_dim: 49
+  fact_context_len: 8
+  hidden_dim: 64
+  predicate_count: 1
+  # Shared per-endpoint grounding capacity; not a dataset-specific time cutoff.
+  max_grounding_facts: 10
+  max_rule_length: 2
+  max_three_hop_paths: 32
+  rule_parameterization: hybrid
+  latent_transition_rule: true
+  latent_second_order_transition_rule: true
+  recurrence_guarded_transitions: true
+  predicate_conditioned_transitions: true
+  positioned_recurrence_rules: true
+  transition_dim: 32
+  sparse_ternary_execution: true
+  sparse_renewal_execution: true
+  predicate_temperature: 0.7
+  final_predicate_temperature: 0.15
+  predicate_entropy_weight: 0.002
+  predicate_diversity_weight: 0.05
+  prototype_separation_weight: 0.01
+  rule_sparsity_weight: 0.0005
+  export_rule_limit: 64
+
+attention:
+  gate_init: 0.95
+  gate_leak: 0.05
+
+explanation_evaluation:
+  max_queries: 0
+
+lifter_diagnostics:
+  enabled: false
+
+paths:
+  processed_root: data/processed
+  output: experiments/main_benchmark/outputs

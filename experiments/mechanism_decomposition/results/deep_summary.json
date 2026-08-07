@@ -1,0 +1,2667 @@
+{
+  "wikipedia": {
+    "interaction": {
+      "full_auc": 0.8932668643352063,
+      "full_ap": 0.9004164271579582,
+      "shapley": {
+        "direct_pair": {
+          "auc": {
+            "mean": 0.06209475900804668,
+            "std": 0.00022562601846828326
+          },
+          "ap": {
+            "mean": 0.06422669345558411,
+            "std": 0.00012036576620171375
+          }
+        },
+        "source_context": {
+          "auc": {
+            "mean": -0.005369409523233638,
+            "std": 0.0003030848015878727
+          },
+          "ap": {
+            "mean": -0.014251199872329834,
+            "std": 1.1719967560199239e-05
+          }
+        },
+        "candidate_context": {
+          "auc": {
+            "mean": 0.08623443746582454,
+            "std": 0.0007453368443680371
+          },
+          "ap": {
+            "mean": 0.09088543730969977,
+            "std": 0.001268628911310199
+          }
+        },
+        "pair_renewal": {
+          "auc": {
+            "mean": 0.10750737969391848,
+            "std": 0.0017809968308210905
+          },
+          "ap": {
+            "mean": 0.14683955291220005,
+            "std": 0.0032537901513043834
+          }
+        },
+        "positioned_recurrence": {
+          "auc": {
+            "mean": 0.08432333181761392,
+            "std": 0.0010544828251429865
+          },
+          "ap": {
+            "mean": 0.09273505470809694,
+            "std": 0.0010619165726254277
+          }
+        },
+        "ordered_transition_1": {
+          "auc": {
+            "mean": 0.0389135553387945,
+            "std": 0.0003319097351049819
+          },
+          "ap": {
+            "mean": 0.026510343628393954,
+            "std": 0.0008208710924985517
+          }
+        },
+        "ordered_transition_2": {
+          "auc": {
+            "mean": 0.019562810534241852,
+            "std": 0.00423783659426043
+          },
+          "ap": {
+            "mean": -0.006529454983686765,
+            "std": 0.004964408808078149
+          }
+        }
+      },
+      "pairwise_ap_synergy": [
+        {
+          "left": "pair_renewal",
+          "right": "ordered_transition_1",
+          "mean": 0.04279100294107937
+        },
+        {
+          "left": "pair_renewal",
+          "right": "ordered_transition_2",
+          "mean": 0.02214807232955307
+        },
+        {
+          "left": "source_context",
+          "right": "pair_renewal",
+          "mean": 0.016538145919070286
+        },
+        {
+          "left": "ordered_transition_1",
+          "right": "ordered_transition_2",
+          "mean": 0.003948166115887071
+        },
+        {
+          "left": "source_context",
+          "right": "candidate_context",
+          "mean": 0.0008618761293769742
+        },
+        {
+          "left": "positioned_recurrence",
+          "right": "ordered_transition_2",
+          "mean": 0.0007756483898250602
+        },
+        {
+          "left": "positioned_recurrence",
+          "right": "ordered_transition_1",
+          "mean": 0.00016192460247332896
+        },
+        {
+          "left": "direct_pair",
+          "right": "ordered_transition_2",
+          "mean": 9.659549648329453e-05
+        },
+        {
+          "left": "direct_pair",
+          "right": "source_context",
+          "mean": 9.497694236137999e-05
+        },
+        {
+          "left": "source_context",
+          "right": "positioned_recurrence",
+          "mean": -0.00014917799690013686
+        },
+        {
+          "left": "direct_pair",
+          "right": "positioned_recurrence",
+          "mean": -0.00038667152327132026
+        },
+        {
+          "left": "direct_pair",
+          "right": "candidate_context",
+          "mean": -0.0004552391917856576
+        },
+        {
+          "left": "candidate_context",
+          "right": "ordered_transition_2",
+          "mean": -0.0008516573475214617
+        },
+        {
+          "left": "candidate_context",
+          "right": "positioned_recurrence",
+          "mean": -0.0010377631636466766
+        },
+        {
+          "left": "direct_pair",
+          "right": "ordered_transition_1",
+          "mean": -0.0013465184474922658
+        },
+        {
+          "left": "source_context",
+          "right": "ordered_transition_2",
+          "mean": -0.0028406948904615703
+        },
+        {
+          "left": "candidate_context",
+          "right": "ordered_transition_1",
+          "mean": -0.004235001567663284
+        },
+        {
+          "left": "source_context",
+          "right": "ordered_transition_1",
+          "mean": -0.004839384375298739
+        },
+        {
+          "left": "direct_pair",
+          "right": "pair_renewal",
+          "mean": -0.010630162317295707
+        },
+        {
+          "left": "candidate_context",
+          "right": "pair_renewal",
+          "mean": -0.0359501475085234
+        },
+        {
+          "left": "pair_renewal",
+          "right": "positioned_recurrence",
+          "mean": -0.04916474932254333
+        }
+      ]
+    },
+    "regime": {
+      "direct_recurrence_present": {
+        "queries": 4203,
+        "full_auc": 0.9504003981309627,
+        "full_ap": 0.9490348251128963,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.0024765439608819273,
+            "ap_drop": 0.0024488040807758202
+          },
+          "source_context": {
+            "auc_drop": 0.0032956870196101384,
+            "ap_drop": 0.001375751155725043
+          },
+          "candidate_context": {
+            "auc_drop": 0.006722328240403715,
+            "ap_drop": 0.006739044673017891
+          },
+          "pair_renewal": {
+            "auc_drop": 0.04470104674863081,
+            "ap_drop": 0.08183069254052522
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.0038606015549169648,
+            "ap_drop": 0.003671967643948985
+          },
+          "ordered_transition_1": {
+            "auc_drop": -0.0021430824849001384,
+            "ap_drop": -0.0037004321436478658
+          },
+          "ordered_transition_2": {
+            "auc_drop": -0.004227745055266537,
+            "ap_drop": -0.0050787291547799525
+          }
+        }
+      },
+      "direct_recurrence_absent": {
+        "queries": 713,
+        "full_auc": 0.3630702632667741,
+        "full_ap": 0.40513819563183623,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.002001171065374452,
+            "ap_drop": -0.001062557879786023
+          },
+          "source_context": {
+            "auc_drop": -0.0019867458479962594,
+            "ap_drop": 6.230220643490177e-05
+          },
+          "candidate_context": {
+            "auc_drop": 0.06822537697355004,
+            "ap_drop": 0.004809889290697071
+          },
+          "pair_renewal": {
+            "auc_drop": -0.005141934303625935,
+            "ap_drop": -0.0030027823908174525
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.010258952322689493,
+            "ap_drop": -0.005345861320023089
+          },
+          "ordered_transition_1": {
+            "auc_drop": -0.053373304299304904,
+            "ap_drop": -0.04154882287516609
+          },
+          "ordered_transition_2": {
+            "auc_drop": -0.022086974881106725,
+            "ap_drop": -0.007855116557709707
+          }
+        }
+      },
+      "low_source_activity": {
+        "queries": 2482,
+        "full_auc": 0.8446320896974466,
+        "full_ap": 0.8482791881010434,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.002437696458822599,
+            "ap_drop": 0.0034532425172022485
+          },
+          "source_context": {
+            "auc_drop": 0.007974688777192021,
+            "ap_drop": 0.001597366395556558
+          },
+          "candidate_context": {
+            "auc_drop": 0.017938666862327368,
+            "ap_drop": 0.018839376826716398
+          },
+          "pair_renewal": {
+            "auc_drop": 0.01970919062049333,
+            "ap_drop": 0.05984392008236742
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.0007122460874893211,
+            "ap_drop": 0.002171971487350155
+          },
+          "ordered_transition_1": {
+            "auc_drop": -0.017763838395512987,
+            "ap_drop": -0.017227808710213455
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.0030126662169067306,
+            "ap_drop": -0.0007353930931720543
+          }
+        }
+      },
+      "high_source_activity": {
+        "queries": 2434,
+        "full_auc": 0.9413630218485632,
+        "full_ap": 0.943309642690748,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.0013847356010791012,
+            "ap_drop": 0.001619481699860888
+          },
+          "source_context": {
+            "auc_drop": 0.0016589144879206967,
+            "ap_drop": -0.0009022657507923304
+          },
+          "candidate_context": {
+            "auc_drop": 0.003967238520665051,
+            "ap_drop": 0.005126336120916064
+          },
+          "pair_renewal": {
+            "auc_drop": 0.06275922648807734,
+            "ap_drop": 0.10903931933748183
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.0021077396429248774,
+            "ap_drop": 0.0020512204370022324
+          },
+          "ordered_transition_1": {
+            "auc_drop": -0.0032689347725446405,
+            "ap_drop": -0.006064260677697571
+          },
+          "ordered_transition_2": {
+            "auc_drop": -0.0021822343784427454,
+            "ap_drop": -0.004419403575810758
+          }
+        }
+      },
+      "low_destination_popularity": {
+        "queries": 2475,
+        "full_auc": 0.8313008060402,
+        "full_ap": 0.835806687714734,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.0030858347787640814,
+            "ap_drop": 0.0038575881212875953
+          },
+          "source_context": {
+            "auc_drop": 0.010243580587014947,
+            "ap_drop": 0.001981867015298048
+          },
+          "candidate_context": {
+            "auc_drop": 0.009349304492738852,
+            "ap_drop": 0.01194260133986987
+          },
+          "pair_renewal": {
+            "auc_drop": 0.02822438526680952,
+            "ap_drop": 0.10703232446624318
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.002952134135972543,
+            "ap_drop": 0.00401097747052818
+          },
+          "ordered_transition_1": {
+            "auc_drop": -0.016797251981090316,
+            "ap_drop": -0.017142470873400706
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.0008191817161514366,
+            "ap_drop": -0.0035774140690378506
+          }
+        }
+      },
+      "high_destination_popularity": {
+        "queries": 2441,
+        "full_auc": 0.9450720186347269,
+        "full_ap": 0.9480229929624359,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.000880257904657252,
+            "ap_drop": 0.0011472280052743737
+          },
+          "source_context": {
+            "auc_drop": 0.004573704830699854,
+            "ap_drop": 0.0015367389457466851
+          },
+          "candidate_context": {
+            "auc_drop": 0.009617104314561606,
+            "ap_drop": 0.008293876276838974
+          },
+          "pair_renewal": {
+            "auc_drop": 0.05194562171130527,
+            "ap_drop": 0.08473456929166123
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.0012137881002445654,
+            "ap_drop": 0.0014798962566981617
+          },
+          "ordered_transition_1": {
+            "auc_drop": -0.01019583123058824,
+            "ap_drop": -0.01077390050106782
+          },
+          "ordered_transition_2": {
+            "auc_drop": -0.0035760792054216526,
+            "ap_drop": -0.005276674293652935
+          }
+        }
+      },
+      "early_test_interval": {
+        "queries": 2458,
+        "full_auc": 0.9013399618610283,
+        "full_ap": 0.9098830587846901,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.0019210724991354233,
+            "ap_drop": 0.0022963641866139786
+          },
+          "source_context": {
+            "auc_drop": 0.00644662717709595,
+            "ap_drop": 0.001980112391797184
+          },
+          "candidate_context": {
+            "auc_drop": 0.006587562837608345,
+            "ap_drop": 0.007859801485143017
+          },
+          "pair_renewal": {
+            "auc_drop": 0.03518084012108602,
+            "ap_drop": 0.07958972775704894
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.0019644373177546415,
+            "ap_drop": 0.002288257232864225
+          },
+          "ordered_transition_1": {
+            "auc_drop": -0.011093393695395378,
+            "ap_drop": -0.009529258183824033
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.0003530425882242172,
+            "ap_drop": -0.0025032430825335794
+          }
+        }
+      },
+      "late_test_interval": {
+        "queries": 2458,
+        "full_auc": 0.8847717874007216,
+        "full_ap": 0.8899151796292838,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.0021951094636157853,
+            "ap_drop": 0.0026522738346781427
+          },
+          "source_context": {
+            "auc_drop": 0.008166047752499664,
+            "ap_drop": 0.0027747091431992534
+          },
+          "candidate_context": {
+            "auc_drop": 0.013756109418816553,
+            "ap_drop": 0.012673080852812749
+          },
+          "pair_renewal": {
+            "auc_drop": 0.0482522985009014,
+            "ap_drop": 0.0991971715812836
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.0028426024805559003,
+            "ap_drop": 0.003464711277349967
+          },
+          "ordered_transition_1": {
+            "auc_drop": -0.01626291041269849,
+            "ap_drop": -0.01711645771926455
+          },
+          "ordered_transition_2": {
+            "auc_drop": -0.004417473660562258,
+            "ap_drop": -0.007008463179605684
+          }
+        }
+      }
+    },
+    "grounded_fact_intervention": {
+      "component": "pair_renewal",
+      "queries": 414,
+      "top_auc_drop": {
+        "mean": 0.003530779817408014,
+        "std": 0.0008956238065799436
+      },
+      "top_ap_drop": {
+        "mean": 0.0038430509557661288,
+        "std": 0.0009261672850792174
+      },
+      "matched_random_auc_drop": {
+        "mean": 0.0019016291267849688,
+        "std": 5.896504781175382e-05
+      },
+      "matched_random_ap_drop": {
+        "mean": 0.001377418096861982,
+        "std": 0.0015468251557993766
+      },
+      "top_mean_abs_logit_delta": {
+        "mean": 1.819567797413053,
+        "std": 0.020152588401331998
+      },
+      "matched_random_mean_abs_logit_delta": {
+        "mean": 1.1720490501042289,
+        "std": 0.03405378486864169
+      },
+      "delta_ratio": {
+        "mean": 1.5530163126629157,
+        "std": 0.028365996480728434
+      },
+      "signed_margin_intervention": {
+        "supporting_queries": {
+          "mean": 380.0,
+          "std": 0.0
+        },
+        "supporting_top_mean_margin_drop": {
+          "mean": 3.634425097599364,
+          "std": 0.02863064941912106
+        },
+        "supporting_random_mean_margin_drop": {
+          "mean": 2.234752810105943,
+          "std": 0.043377364601425154
+        },
+        "supporting_direction_consistency": {
+          "mean": 0.993859649122807,
+          "std": 0.0015193428136569145
+        },
+        "opposing_queries": {
+          "mean": 74.0,
+          "std": 3.0
+        },
+        "opposing_top_mean_margin_gain": {
+          "mean": 1.6354109838470337,
+          "std": 0.027723388575144822
+        },
+        "opposing_random_mean_margin_gain": {
+          "mean": 0.7758416583043698,
+          "std": 0.04983840044184406
+        },
+        "opposing_direction_consistency": {
+          "mean": 0.9954954954954954,
+          "std": 0.007802030664724657
+        }
+      }
+    }
+  },
+  "reddit": {
+    "interaction": {
+      "full_auc": 0.8376243262729229,
+      "full_ap": 0.8404780648290956,
+      "shapley": {
+        "direct_pair": {
+          "auc": {
+            "mean": 0.02972735149262568,
+            "std": 0.0004416363188998753
+          },
+          "ap": {
+            "mean": 0.024567673808225134,
+            "std": 0.0004671769567024976
+          }
+        },
+        "source_context": {
+          "auc": {
+            "mean": 0.0012018540367318205,
+            "std": 0.00015469226459149675
+          },
+          "ap": {
+            "mean": 0.0020272483874333564,
+            "std": 0.0002015267859977752
+          }
+        },
+        "candidate_context": {
+          "auc": {
+            "mean": 0.07204558214513045,
+            "std": 0.0013875658165653387
+          },
+          "ap": {
+            "mean": 0.07210950382994498,
+            "std": 0.0015463724064411566
+          }
+        },
+        "pair_renewal": {
+          "auc": {
+            "mean": 0.05780371733361001,
+            "std": 0.0015565158450613359
+          },
+          "ap": {
+            "mean": 0.07678280902594385,
+            "std": 0.0033521117701721666
+          }
+        },
+        "positioned_recurrence": {
+          "auc": {
+            "mean": 0.051046252175715366,
+            "std": 0.0005684843870601007
+          },
+          "ap": {
+            "mean": 0.06332648525118366,
+            "std": 0.0005521254282548977
+          }
+        },
+        "ordered_transition_1": {
+          "auc": {
+            "mean": 0.0649380029725209,
+            "std": 0.0006659334726453105
+          },
+          "ap": {
+            "mean": 0.04299549652440802,
+            "std": 0.00227160158985148
+          }
+        },
+        "ordered_transition_2": {
+          "auc": {
+            "mean": 0.060861566116588696,
+            "std": 0.004604948744497933
+          },
+          "ap": {
+            "mean": 0.058668848001956604,
+            "std": 0.008021664490527372
+          }
+        }
+      },
+      "pairwise_ap_synergy": [
+        {
+          "left": "pair_renewal",
+          "right": "ordered_transition_1",
+          "mean": 0.007085018412838706
+        },
+        {
+          "left": "source_context",
+          "right": "pair_renewal",
+          "mean": 0.002873565658701671
+        },
+        {
+          "left": "positioned_recurrence",
+          "right": "ordered_transition_1",
+          "mean": 0.0010888800415600104
+        },
+        {
+          "left": "direct_pair",
+          "right": "ordered_transition_1",
+          "mean": 0.0004573961079535153
+        },
+        {
+          "left": "source_context",
+          "right": "candidate_context",
+          "mean": 0.00029904292353089
+        },
+        {
+          "left": "direct_pair",
+          "right": "ordered_transition_2",
+          "mean": 0.00010783291943827766
+        },
+        {
+          "left": "direct_pair",
+          "right": "source_context",
+          "mean": 4.9941457775074895e-05
+        },
+        {
+          "left": "direct_pair",
+          "right": "positioned_recurrence",
+          "mean": -9.288749269716531e-06
+        },
+        {
+          "left": "direct_pair",
+          "right": "candidate_context",
+          "mean": -0.0001520254925278334
+        },
+        {
+          "left": "source_context",
+          "right": "positioned_recurrence",
+          "mean": -0.0002843313175080464
+        },
+        {
+          "left": "positioned_recurrence",
+          "right": "ordered_transition_2",
+          "mean": -0.0003794733595351059
+        },
+        {
+          "left": "candidate_context",
+          "right": "positioned_recurrence",
+          "mean": -0.000778875368729041
+        },
+        {
+          "left": "direct_pair",
+          "right": "pair_renewal",
+          "mean": -0.0008243396176763618
+        },
+        {
+          "left": "source_context",
+          "right": "ordered_transition_2",
+          "mean": -0.00087241768938362
+        },
+        {
+          "left": "source_context",
+          "right": "ordered_transition_1",
+          "mean": -0.0026576752368486036
+        },
+        {
+          "left": "ordered_transition_1",
+          "right": "ordered_transition_2",
+          "mean": -0.0028765798139351504
+        },
+        {
+          "left": "candidate_context",
+          "right": "ordered_transition_2",
+          "mean": -0.0035234076213729315
+        },
+        {
+          "left": "candidate_context",
+          "right": "pair_renewal",
+          "mean": -0.0066764660695327605
+        },
+        {
+          "left": "candidate_context",
+          "right": "ordered_transition_1",
+          "mean": -0.009645765641581963
+        },
+        {
+          "left": "pair_renewal",
+          "right": "ordered_transition_2",
+          "mean": -0.010600269517399083
+        },
+        {
+          "left": "pair_renewal",
+          "right": "positioned_recurrence",
+          "mean": -0.014336561355310917
+        }
+      ]
+    },
+    "regime": {
+      "direct_recurrence_present": {
+        "queries": 3686,
+        "full_auc": 0.9332156487173093,
+        "full_ap": 0.9274321738802599,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.00020611000233864787,
+            "ap_drop": -4.769805116359531e-06
+          },
+          "source_context": {
+            "auc_drop": 0.0036941065542343368,
+            "ap_drop": 0.004431920498901842
+          },
+          "candidate_context": {
+            "auc_drop": 0.002471406377285416,
+            "ap_drop": 0.0035164408227601474
+          },
+          "pair_renewal": {
+            "auc_drop": 0.006160066386998915,
+            "ap_drop": 0.010891221416722089
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.0015149244642784405,
+            "ap_drop": 0.0011844813331221375
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.009700761937230906,
+            "ap_drop": 0.006664298224003311
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.0016059946141035268,
+            "ap_drop": 0.0023083548725612393
+          }
+        }
+      },
+      "direct_recurrence_absent": {
+        "queries": 1230,
+        "full_auc": 0.3632604049617732,
+        "full_ap": 0.39928898956020636,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.008144182254830693,
+            "ap_drop": -0.003699908845903136
+          },
+          "source_context": {
+            "auc_drop": -0.002057857976953755,
+            "ap_drop": 4.4447249017698365e-05
+          },
+          "candidate_context": {
+            "auc_drop": 0.08625873047348358,
+            "ap_drop": 0.025489539773378773
+          },
+          "pair_renewal": {
+            "auc_drop": -0.00666248044594268,
+            "ap_drop": -0.003216440693794139
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.01875581113534715,
+            "ap_drop": -0.00873744851259147
+          },
+          "ordered_transition_1": {
+            "auc_drop": -0.06494590962169787,
+            "ap_drop": -0.04827925428191963
+          },
+          "ordered_transition_2": {
+            "auc_drop": -0.010603697093881518,
+            "ap_drop": -0.0034340951133065567
+          }
+        }
+      },
+      "low_source_activity": {
+        "queries": 2484,
+        "full_auc": 0.8076471489459541,
+        "full_ap": 0.7924431436130353,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.0015365650955162513,
+            "ap_drop": -0.0010981981764952946
+          },
+          "source_context": {
+            "auc_drop": 0.0008826214017700525,
+            "ap_drop": 0.0007469637216240462
+          },
+          "candidate_context": {
+            "auc_drop": 0.025319613967394572,
+            "ap_drop": 0.025248811702400602
+          },
+          "pair_renewal": {
+            "auc_drop": 0.004550108347746644,
+            "ap_drop": 0.013958937198988774
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.0016059301267240533,
+            "ap_drop": 0.0011221560189818385
+          },
+          "ordered_transition_1": {
+            "auc_drop": -0.008585975471141963,
+            "ap_drop": -0.023712352452698093
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.0020384351421832703,
+            "ap_drop": 0.005309456146029364
+          }
+        }
+      },
+      "high_source_activity": {
+        "queries": 2432,
+        "full_auc": 0.8739318565868824,
+        "full_ap": 0.8830445218389786,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.00014867104541782528,
+            "ap_drop": -3.376094003067672e-05
+          },
+          "source_context": {
+            "auc_drop": 0.0012928407057940516,
+            "ap_drop": 0.0008943434115234276
+          },
+          "candidate_context": {
+            "auc_drop": 0.0013367431866054824,
+            "ap_drop": 0.001091727260727482
+          },
+          "pair_renewal": {
+            "auc_drop": 0.015161346970942957,
+            "ap_drop": 0.03178624581961339
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.00029908917287050735,
+            "ap_drop": 0.000666889020858615
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.0033939041039069417,
+            "ap_drop": 0.00034360905667074615
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.0019227483155874376,
+            "ap_drop": -0.0007775341608971716
+          }
+        }
+      },
+      "low_destination_popularity": {
+        "queries": 2460,
+        "full_auc": 0.6615054971687929,
+        "full_ap": 0.6647677741826908,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.0012707933989909066,
+            "ap_drop": -0.0005430604754071977
+          },
+          "source_context": {
+            "auc_drop": 0.004872155022363267,
+            "ap_drop": 0.0034500886288875896
+          },
+          "candidate_context": {
+            "auc_drop": -0.004760476568180312,
+            "ap_drop": -0.010021842694730387
+          },
+          "pair_renewal": {
+            "auc_drop": 0.018167922532883907,
+            "ap_drop": 0.060579271991006545
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.0003760438010884289,
+            "ap_drop": 0.0025779387649145966
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.004512415449357728,
+            "ap_drop": 0.003387425239616696
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.0007702646132152399,
+            "ap_drop": -0.00786286996302521
+          }
+        }
+      },
+      "high_destination_popularity": {
+        "queries": 2456,
+        "full_auc": 0.9551387813133295,
+        "full_ap": 0.9524097272917437,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.0006804890944908845,
+            "ap_drop": -0.0006259208372060657
+          },
+          "source_context": {
+            "auc_drop": 0.003295183061181891,
+            "ap_drop": 0.003196971450579326
+          },
+          "candidate_context": {
+            "auc_drop": 0.01780854438773886,
+            "ap_drop": 0.015807854388697102
+          },
+          "pair_renewal": {
+            "auc_drop": 0.0013355026755367632,
+            "ap_drop": 0.004808551202148255
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.0012754335147676654,
+            "ap_drop": -0.0010859586887917623
+          },
+          "ordered_transition_1": {
+            "auc_drop": -0.00843112393765455,
+            "ap_drop": -0.007770391907017338
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.0004326968986408201,
+            "ap_drop": 0.0024189801937692565
+          }
+        }
+      },
+      "early_test_interval": {
+        "queries": 2458,
+        "full_auc": 0.8320842775939831,
+        "full_ap": 0.8356260060544191,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.0013366957067505458,
+            "ap_drop": -0.0010790829084393883
+          },
+          "source_context": {
+            "auc_drop": 0.004609360224375932,
+            "ap_drop": 0.003941978997508551
+          },
+          "candidate_context": {
+            "auc_drop": 0.011637522860321381,
+            "ap_drop": 0.009456683035481453
+          },
+          "pair_renewal": {
+            "auc_drop": 0.008889898159985496,
+            "ap_drop": 0.026404956549228403
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.0012720898510214518,
+            "ap_drop": -0.000243218636147328
+          },
+          "ordered_transition_1": {
+            "auc_drop": -0.0017132965361330577,
+            "ap_drop": -0.005634558169712922
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.002465339592873872,
+            "ap_drop": 0.0014612268412334355
+          }
+        }
+      },
+      "late_test_interval": {
+        "queries": 2458,
+        "full_auc": 0.8431251755833782,
+        "full_ap": 0.8451087199716506,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.0006668030506763456,
+            "ap_drop": -0.0004290136210243582
+          },
+          "source_context": {
+            "auc_drop": 0.004418135718861811,
+            "ap_drop": 0.0038634182413748905
+          },
+          "candidate_context": {
+            "auc_drop": 0.01079301232774621,
+            "ap_drop": 0.010301834042048466
+          },
+          "pair_renewal": {
+            "auc_drop": 0.007554140369159283,
+            "ap_drop": 0.02018293181986201
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.0008172006277195424,
+            "ap_drop": -0.0001514739800420791
+          },
+          "ordered_transition_1": {
+            "auc_drop": -0.0008776134475516247,
+            "ap_drop": -0.005608029538518133
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.0012288905469770943,
+            "ap_drop": 0.0019528125223037633
+          }
+        }
+      }
+    },
+    "grounded_fact_intervention": {
+      "component": "pair_renewal",
+      "queries": 346,
+      "top_auc_drop": {
+        "mean": 0.0014307685556486833,
+        "std": 0.0019209037258579396
+      },
+      "top_ap_drop": {
+        "mean": -0.0005936037622912652,
+        "std": 0.004411715065689867
+      },
+      "matched_random_auc_drop": {
+        "mean": 0.005110930749779159,
+        "std": 0.002069912340425148
+      },
+      "matched_random_ap_drop": {
+        "mean": 0.0052379482308475556,
+        "std": 0.005652134710974586
+      },
+      "top_mean_abs_logit_delta": {
+        "mean": 1.9489103283412632,
+        "std": 0.003846107618555446
+      },
+      "matched_random_mean_abs_logit_delta": {
+        "mean": 1.5709665421841474,
+        "std": 0.0342756259886402
+      },
+      "delta_ratio": {
+        "mean": 1.2409831774104296,
+        "std": 0.0278079124875314
+      },
+      "signed_margin_intervention": {
+        "supporting_queries": {
+          "mean": 306.0,
+          "std": 0.0
+        },
+        "supporting_top_mean_margin_drop": {
+          "mean": 3.7777867400308582,
+          "std": 0.04603134518795564
+        },
+        "supporting_random_mean_margin_drop": {
+          "mean": 2.8932156027791804,
+          "std": 0.12244090689468107
+        },
+        "supporting_direction_consistency": {
+          "mean": 0.9945533769063181,
+          "std": 0.0018867655855870056
+        },
+        "opposing_queries": {
+          "mean": 70.66666666666667,
+          "std": 2.081665999466133
+        },
+        "opposing_top_mean_margin_gain": {
+          "mean": 2.654856597729436,
+          "std": 0.3164973024303318
+        },
+        "opposing_random_mean_margin_gain": {
+          "mean": 0.747194364440161,
+          "std": 0.17666405646032532
+        },
+        "opposing_direction_consistency": {
+          "mean": 0.9386709776227345,
+          "std": 0.021863102119530166
+        }
+      }
+    }
+  },
+  "mooc": {
+    "interaction": {
+      "full_auc": 0.867409094705895,
+      "full_ap": 0.8507680056316573,
+      "shapley": {
+        "direct_pair": {
+          "auc": {
+            "mean": 0.010228425840506393,
+            "std": 0.0007221872794909847
+          },
+          "ap": {
+            "mean": 0.015144283669125886,
+            "std": 0.0008780916765744988
+          }
+        },
+        "source_context": {
+          "auc": {
+            "mean": 1.1553771171821616e-05,
+            "std": 0.0006909048182389186
+          },
+          "ap": {
+            "mean": -0.01175122600138851,
+            "std": 0.0008638703921973833
+          }
+        },
+        "candidate_context": {
+          "auc": {
+            "mean": 0.0252170004613548,
+            "std": 0.0007415246819804021
+          },
+          "ap": {
+            "mean": 0.031226502764229214,
+            "std": 0.0008613980314249919
+          }
+        },
+        "pair_renewal": {
+          "auc": {
+            "mean": -0.007821216591920812,
+            "std": 0.0005196567851714778
+          },
+          "ap": {
+            "mean": -0.004925341238754102,
+            "std": 0.0005659697533010913
+          }
+        },
+        "positioned_recurrence": {
+          "auc": {
+            "mean": 0.00103027735918353,
+            "std": 0.0018876615396101087
+          },
+          "ap": {
+            "mean": 0.002848316399930322,
+            "std": 0.0028923510320640017
+          }
+        },
+        "ordered_transition_1": {
+          "auc": {
+            "mean": 0.14142816779960607,
+            "std": 0.0034459498690262162
+          },
+          "ap": {
+            "mean": 0.11679172782930554,
+            "std": 0.006231714160632992
+          }
+        },
+        "ordered_transition_2": {
+          "auc": {
+            "mean": 0.19731488606599312,
+            "std": 0.0002858742222924881
+          },
+          "ap": {
+            "mean": 0.20143374220920904,
+            "std": 0.0037109911467530657
+          }
+        }
+      },
+      "pairwise_ap_synergy": [
+        {
+          "left": "source_context",
+          "right": "ordered_transition_2",
+          "mean": 0.013385233795323859
+        },
+        {
+          "left": "positioned_recurrence",
+          "right": "ordered_transition_2",
+          "mean": 0.005236253213116641
+        },
+        {
+          "left": "source_context",
+          "right": "candidate_context",
+          "mean": 0.0033249546302167956
+        },
+        {
+          "left": "candidate_context",
+          "right": "ordered_transition_1",
+          "mean": 0.003098009659207627
+        },
+        {
+          "left": "pair_renewal",
+          "right": "ordered_transition_2",
+          "mean": 0.0030426446873145587
+        },
+        {
+          "left": "direct_pair",
+          "right": "ordered_transition_2",
+          "mean": 0.0028178469474630465
+        },
+        {
+          "left": "positioned_recurrence",
+          "right": "ordered_transition_1",
+          "mean": 0.0021462336322130384
+        },
+        {
+          "left": "pair_renewal",
+          "right": "positioned_recurrence",
+          "mean": 0.0020028106956538894
+        },
+        {
+          "left": "candidate_context",
+          "right": "pair_renewal",
+          "mean": 0.0009983235744177588
+        },
+        {
+          "left": "direct_pair",
+          "right": "pair_renewal",
+          "mean": 0.00028151379805851917
+        },
+        {
+          "left": "direct_pair",
+          "right": "ordered_transition_1",
+          "mean": 0.00025832822385396526
+        },
+        {
+          "left": "direct_pair",
+          "right": "source_context",
+          "mean": 0.00018029175582482773
+        },
+        {
+          "left": "source_context",
+          "right": "positioned_recurrence",
+          "mean": -9.291923922642258e-05
+        },
+        {
+          "left": "pair_renewal",
+          "right": "ordered_transition_1",
+          "mean": -9.304201487836394e-05
+        },
+        {
+          "left": "source_context",
+          "right": "pair_renewal",
+          "mean": -0.0005465620394791518
+        },
+        {
+          "left": "source_context",
+          "right": "ordered_transition_1",
+          "mean": -0.001389746265609319
+        },
+        {
+          "left": "direct_pair",
+          "right": "candidate_context",
+          "mean": -0.0015479493138879457
+        },
+        {
+          "left": "direct_pair",
+          "right": "positioned_recurrence",
+          "mean": -0.002636189190552011
+        },
+        {
+          "left": "candidate_context",
+          "right": "positioned_recurrence",
+          "mean": -0.0027260995665480494
+        },
+        {
+          "left": "candidate_context",
+          "right": "ordered_transition_2",
+          "mean": -0.018832265949901655
+        },
+        {
+          "left": "ordered_transition_1",
+          "right": "ordered_transition_2",
+          "mean": -0.09267370792318837
+        }
+      ]
+    },
+    "regime": {
+      "direct_recurrence_present": {
+        "queries": 2877,
+        "full_auc": 0.9034283505790475,
+        "full_ap": 0.8758987439355553,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.0020330720954088908,
+            "ap_drop": 0.005129716312804085
+          },
+          "source_context": {
+            "auc_drop": -0.001022637197028146,
+            "ap_drop": -0.004204554116230663
+          },
+          "candidate_context": {
+            "auc_drop": 0.0010088441696792794,
+            "ap_drop": 0.005536322372239555
+          },
+          "pair_renewal": {
+            "auc_drop": 0.00021968164726356618,
+            "ap_drop": 0.00013769306807120962
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.0016567540105592398,
+            "ap_drop": 0.0025864369399469047
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.016823425932671388,
+            "ap_drop": 0.015867697870193376
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.045689191666981786,
+            "ap_drop": 0.055459833640637966
+          }
+        }
+      },
+      "direct_recurrence_absent": {
+        "queries": 2039,
+        "full_auc": 0.8088576501878563,
+        "full_ap": 0.8084252965121047,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.020108377083362956,
+            "ap_drop": -0.030634262457498562
+          },
+          "source_context": {
+            "auc_drop": -0.003642034119210343,
+            "ap_drop": -0.005716763019344022
+          },
+          "candidate_context": {
+            "auc_drop": -0.009575578010710406,
+            "ap_drop": -0.016066282094903017
+          },
+          "pair_renewal": {
+            "auc_drop": 0.0018218388634316796,
+            "ap_drop": 0.0041646686624785545
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.026458715822882617,
+            "ap_drop": -0.038157493575217104
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.056143232148837395,
+            "ap_drop": 0.05337229920487263
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.14213069118191665,
+            "ap_drop": 0.2090547191684411
+          }
+        }
+      },
+      "low_source_activity": {
+        "queries": 2504,
+        "full_auc": 0.8160038719731072,
+        "full_ap": 0.801186936266593,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.011781203322819808,
+            "ap_drop": -0.018564829709359687
+          },
+          "source_context": {
+            "auc_drop": -2.623597770723407e-05,
+            "ap_drop": -0.0026325614215483295
+          },
+          "candidate_context": {
+            "auc_drop": -0.005332336206691268,
+            "ap_drop": -0.007925642674621147
+          },
+          "pair_renewal": {
+            "auc_drop": 0.0008886208052206745,
+            "ap_drop": 0.0018301235490414403
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.01415235623003197,
+            "ap_drop": -0.022338093844840385
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.03879490366000127,
+            "ap_drop": 0.034119927433918486
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.11138775403443946,
+            "ap_drop": 0.1410604049199671
+          }
+        }
+      },
+      "high_source_activity": {
+        "queries": 2412,
+        "full_auc": 0.918041082591465,
+        "full_ap": 0.9064005199439261,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.0014431138026469819,
+            "ap_drop": -0.0017766608553549945
+          },
+          "source_context": {
+            "auc_drop": 0.0008371228893307251,
+            "ap_drop": 0.0011069570233887733
+          },
+          "candidate_context": {
+            "auc_drop": -0.0027053442021512573,
+            "ap_drop": -0.0025976465155980546
+          },
+          "pair_renewal": {
+            "auc_drop": 0.0005966803168604798,
+            "ap_drop": 0.0020055281545268513
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.0027055160900857724,
+            "ap_drop": -0.005177204488476546
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.023662780624241986,
+            "ap_drop": 0.024436963258617033
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.05388629452699648,
+            "ap_drop": 0.06549578701890728
+          }
+        }
+      },
+      "low_destination_popularity": {
+        "queries": 2461,
+        "full_auc": 0.8435468150775008,
+        "full_ap": 0.8310924733534343,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.009639582415933731,
+            "ap_drop": -0.01571500995033644
+          },
+          "source_context": {
+            "auc_drop": -0.003210644086486821,
+            "ap_drop": -0.006934681456055951
+          },
+          "candidate_context": {
+            "auc_drop": -0.01035192756149387,
+            "ap_drop": -0.013694523872696873
+          },
+          "pair_renewal": {
+            "auc_drop": 0.000870851984717517,
+            "ap_drop": 0.00208944509602201
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.012093356345444284,
+            "ap_drop": -0.018650676213868806
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.04165889955636252,
+            "ap_drop": 0.03623872108335361
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.1152252808721927,
+            "ap_drop": 0.15228688224956244
+          }
+        }
+      },
+      "high_destination_popularity": {
+        "queries": 2455,
+        "full_auc": 0.8892167086304327,
+        "full_ap": 0.8670514796650032,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.0021487107376082504,
+            "ap_drop": -0.003655970118314089
+          },
+          "source_context": {
+            "auc_drop": -0.0011633710938094104,
+            "ap_drop": -0.003722990112039174
+          },
+          "candidate_context": {
+            "auc_drop": 0.004089828729763045,
+            "ap_drop": 0.006311400211657436
+          },
+          "pair_renewal": {
+            "auc_drop": 0.0006097535683027289,
+            "ap_drop": 0.0013241671448852206
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.004301569458674363,
+            "ap_drop": -0.009287944146341856
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.01889494955360786,
+            "ap_drop": 0.020432007538443986
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.05821031105727951,
+            "ap_drop": 0.08690666343472864
+          }
+        }
+      },
+      "early_test_interval": {
+        "queries": 2458,
+        "full_auc": 0.8728033733194477,
+        "full_ap": 0.8553240195444841,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.0056400746536938344,
+            "ap_drop": -0.00981298716282423
+          },
+          "source_context": {
+            "auc_drop": -0.002370720427566068,
+            "ap_drop": -0.006273505028053091
+          },
+          "candidate_context": {
+            "auc_drop": -0.0031887486281599875,
+            "ap_drop": -0.005621100757224329
+          },
+          "pair_renewal": {
+            "auc_drop": 0.000503440165267414,
+            "ap_drop": 0.001026860866237082
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.007505754941768639,
+            "ap_drop": -0.013177332876492217
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.028766102085417484,
+            "ap_drop": 0.025857873888585143
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.09038601971212386,
+            "ap_drop": 0.12269682426133093
+          }
+        }
+      },
+      "late_test_interval": {
+        "queries": 2458,
+        "full_auc": 0.8624667950177024,
+        "full_ap": 0.8466577744963507,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.006039654423222555,
+            "ap_drop": -0.008998047666868883
+          },
+          "source_context": {
+            "auc_drop": -0.0019975126469686058,
+            "ap_drop": -0.004749043096772709
+          },
+          "candidate_context": {
+            "auc_drop": -0.0002974848625886632,
+            "ap_drop": 0.0019479877821752718
+          },
+          "pair_renewal": {
+            "auc_drop": 0.0008001250407441892,
+            "ap_drop": 0.0021201811979185323
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.00795882350474686,
+            "ap_drop": -0.01309818699736757
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.030564666213377462,
+            "ap_drop": 0.028486575322614782
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.08101803270259038,
+            "ap_drop": 0.11169360312034422
+          }
+        }
+      }
+    },
+    "grounded_fact_intervention": {
+      "component": "ordered_transition_2",
+      "queries": 492,
+      "top_auc_drop": {
+        "mean": 0.13255034481239122,
+        "std": 0.010053546666827017
+      },
+      "top_ap_drop": {
+        "mean": 0.1337900533250791,
+        "std": 0.012486442990892839
+      },
+      "matched_random_auc_drop": {
+        "mean": 0.012586203097803339,
+        "std": 0.005723305398388216
+      },
+      "matched_random_ap_drop": {
+        "mean": 0.015001318240049724,
+        "std": 0.008021230649504114
+      },
+      "top_mean_abs_logit_delta": {
+        "mean": 1.7837601383532167,
+        "std": 0.045421830293808294
+      },
+      "matched_random_mean_abs_logit_delta": {
+        "mean": 0.49174846866140315,
+        "std": 0.018347737039653027
+      },
+      "delta_ratio": {
+        "mean": 3.6317773883311855,
+        "std": 0.1950235824739674
+      },
+      "signed_margin_intervention": {
+        "supporting_queries": {
+          "mean": 478.3333333333333,
+          "std": 4.041451884327381
+        },
+        "supporting_top_mean_margin_drop": {
+          "mean": 1.3945342759958503,
+          "std": 0.09096383912907868
+        },
+        "supporting_random_mean_margin_drop": {
+          "mean": 0.2673124158353404,
+          "std": 0.009307874137538748
+        },
+        "supporting_direction_consistency": {
+          "mean": 0.7273473588482853,
+          "std": 0.03428136327746497
+        },
+        "opposing_queries": {
+          "mean": 198.66666666666666,
+          "std": 10.408329997330663
+        },
+        "opposing_top_mean_margin_gain": {
+          "mean": 0.3366559455166505,
+          "std": 0.19888509718448727
+        },
+        "opposing_random_mean_margin_gain": {
+          "mean": 0.20566520828195045,
+          "std": 0.06084030504881652
+        },
+        "opposing_direction_consistency": {
+          "mean": 0.567792542255078,
+          "std": 0.03269579515159412
+        }
+      }
+    }
+  },
+  "lastfm": {
+    "interaction": {
+      "full_auc": 0.7067221248076997,
+      "full_ap": 0.7215679268946377,
+      "shapley": {
+        "direct_pair": {
+          "auc": {
+            "mean": 0.01329372522594919,
+            "std": 9.176825017362286e-05
+          },
+          "ap": {
+            "mean": 0.01136757890696189,
+            "std": 0.0001497006883296863
+          }
+        },
+        "source_context": {
+          "auc": {
+            "mean": -0.0005050171841960623,
+            "std": 0.00014147420552751425
+          },
+          "ap": {
+            "mean": -0.00871399538426369,
+            "std": 0.00040078282006796425
+          }
+        },
+        "candidate_context": {
+          "auc": {
+            "mean": 0.009543809661370523,
+            "std": 0.00043786192628168954
+          },
+          "ap": {
+            "mean": 0.017735594892623836,
+            "std": 0.0006003300748432653
+          }
+        },
+        "pair_renewal": {
+          "auc": {
+            "mean": 0.01902591138420071,
+            "std": 0.0007261203201622319
+          },
+          "ap": {
+            "mean": 0.0256156557863267,
+            "std": 0.0009998103942076926
+          }
+        },
+        "positioned_recurrence": {
+          "auc": {
+            "mean": 0.019806731103776332,
+            "std": 0.0003961807901766136
+          },
+          "ap": {
+            "mean": 0.02296869004557575,
+            "std": 0.000850815923830942
+          }
+        },
+        "ordered_transition_1": {
+          "auc": {
+            "mean": 0.10242612111139664,
+            "std": 0.002359075312964388
+          },
+          "ap": {
+            "mean": 0.09699749904264154,
+            "std": 0.005276127167606971
+          }
+        },
+        "ordered_transition_2": {
+          "auc": {
+            "mean": 0.0431308435052023,
+            "std": 0.0024801836519080765
+          },
+          "ap": {
+            "mean": 0.0555969036047716,
+            "std": 0.0025234270167696802
+          }
+        }
+      },
+      "pairwise_ap_synergy": [
+        {
+          "left": "source_context",
+          "right": "ordered_transition_2",
+          "mean": 0.006484472488831587
+        },
+        {
+          "left": "source_context",
+          "right": "ordered_transition_1",
+          "mean": 0.00211878284887812
+        },
+        {
+          "left": "source_context",
+          "right": "pair_renewal",
+          "mean": 0.0012554509995533758
+        },
+        {
+          "left": "positioned_recurrence",
+          "right": "ordered_transition_2",
+          "mean": 0.00028724511849498313
+        },
+        {
+          "left": "direct_pair",
+          "right": "ordered_transition_2",
+          "mean": 0.00014743526056126832
+        },
+        {
+          "left": "source_context",
+          "right": "candidate_context",
+          "mean": 0.0001362240054470313
+        },
+        {
+          "left": "direct_pair",
+          "right": "source_context",
+          "mean": 0.00012308023619663397
+        },
+        {
+          "left": "direct_pair",
+          "right": "candidate_context",
+          "mean": -3.005283176057046e-06
+        },
+        {
+          "left": "candidate_context",
+          "right": "ordered_transition_2",
+          "mean": -2.415400926891742e-05
+        },
+        {
+          "left": "candidate_context",
+          "right": "positioned_recurrence",
+          "mean": -5.703885999560251e-05
+        },
+        {
+          "left": "direct_pair",
+          "right": "positioned_recurrence",
+          "mean": -0.00016531545271018336
+        },
+        {
+          "left": "direct_pair",
+          "right": "pair_renewal",
+          "mean": -0.00026133545147803233
+        },
+        {
+          "left": "source_context",
+          "right": "positioned_recurrence",
+          "mean": -0.0003285448096042032
+        },
+        {
+          "left": "candidate_context",
+          "right": "ordered_transition_1",
+          "mean": -0.00036906450969679633
+        },
+        {
+          "left": "candidate_context",
+          "right": "pair_renewal",
+          "mean": -0.0005143125210782529
+        },
+        {
+          "left": "direct_pair",
+          "right": "ordered_transition_1",
+          "mean": -0.0008823331203372161
+        },
+        {
+          "left": "positioned_recurrence",
+          "right": "ordered_transition_1",
+          "mean": -0.0032781074578948446
+        },
+        {
+          "left": "pair_renewal",
+          "right": "positioned_recurrence",
+          "mean": -0.004113207012433821
+        },
+        {
+          "left": "pair_renewal",
+          "right": "ordered_transition_1",
+          "mean": -0.004989457668222674
+        },
+        {
+          "left": "pair_renewal",
+          "right": "ordered_transition_2",
+          "mean": -0.005501317764473379
+        },
+        {
+          "left": "ordered_transition_1",
+          "right": "ordered_transition_2",
+          "mean": -0.0510110948692701
+        }
+      ]
+    },
+    "regime": {
+      "direct_recurrence_present": {
+        "queries": 3470,
+        "full_auc": 0.7519969299083402,
+        "full_ap": 0.7592271341831317,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.0015418144269392735,
+            "ap_drop": 0.0007063069816126329
+          },
+          "source_context": {
+            "auc_drop": 0.006047928311006645,
+            "ap_drop": 0.0002848266782056926
+          },
+          "candidate_context": {
+            "auc_drop": 0.0005297638327145989,
+            "ap_drop": 0.000245671159489258
+          },
+          "pair_renewal": {
+            "auc_drop": 0.009615172730720581,
+            "ap_drop": 0.012872557977849511
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.007124785799511073,
+            "ap_drop": 0.004773667968581585
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.061217309337341895,
+            "ap_drop": 0.04702518836333902
+          },
+          "ordered_transition_2": {
+            "auc_drop": -0.0014797481915804027,
+            "ap_drop": 0.0067683896199462286
+          }
+        }
+      },
+      "direct_recurrence_absent": {
+        "queries": 1446,
+        "full_auc": 0.5929865188271551,
+        "full_ap": 0.6075311698029083,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.0024407165727046154,
+            "ap_drop": -0.0031112428379335886
+          },
+          "source_context": {
+            "auc_drop": 0.012135510624689575,
+            "ap_drop": -0.004302869125376326
+          },
+          "candidate_context": {
+            "auc_drop": -0.000738591762334447,
+            "ap_drop": -0.0009503535192467346
+          },
+          "pair_renewal": {
+            "auc_drop": -0.002239209992175639,
+            "ap_drop": -0.0068019079663764375
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.010805790380866523,
+            "ap_drop": -0.014023795932202784
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.04896769326617301,
+            "ap_drop": 0.05694172576285169
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.010990079626983285,
+            "ap_drop": 0.03799049202033444
+          }
+        }
+      },
+      "low_source_activity": {
+        "queries": 2458,
+        "full_auc": 0.7002550083055215,
+        "full_ap": 0.7123128245315584,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.0004283241340332644,
+            "ap_drop": -0.0009948864919240297
+          },
+          "source_context": {
+            "auc_drop": 0.016635180277371542,
+            "ap_drop": 0.0024835406353939473
+          },
+          "candidate_context": {
+            "auc_drop": -0.00016885245214252423,
+            "ap_drop": -0.000422288138200629
+          },
+          "pair_renewal": {
+            "auc_drop": 0.0020421188248995006,
+            "ap_drop": 0.004206855954811369
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.0013591229316470832,
+            "ap_drop": -0.0034010935072312787
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.05533954984007983,
+            "ap_drop": 0.04962994981176586
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.010575471004825735,
+            "ap_drop": 0.02862310928077842
+          }
+        }
+      },
+      "high_source_activity": {
+        "queries": 2458,
+        "full_auc": 0.712859246626206,
+        "full_ap": 0.73115558925072,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.0012520074159357113,
+            "ap_drop": 0.0008139558676130143
+          },
+          "source_context": {
+            "auc_drop": 0.0004580891717496094,
+            "ap_drop": -0.002023373574674192
+          },
+          "candidate_context": {
+            "auc_drop": 0.00047541303058729056,
+            "ap_drop": 0.00044302237731067934
+          },
+          "pair_renewal": {
+            "auc_drop": 0.009576066415923123,
+            "ap_drop": 0.012723531803627916
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.005411443854256219,
+            "ap_drop": 0.004959327587208517
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.05899976673479246,
+            "ap_drop": 0.04927549815244551
+          },
+          "ordered_transition_2": {
+            "auc_drop": -0.003042930287688613,
+            "ap_drop": -0.0018953345982675174
+          }
+        }
+      },
+      "low_destination_popularity": {
+        "queries": 2508,
+        "full_auc": 0.6427626173596962,
+        "full_ap": 0.6591535309221401,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.0004505518544803966,
+            "ap_drop": -0.0002746912498049481
+          },
+          "source_context": {
+            "auc_drop": 0.011807246052398393,
+            "ap_drop": -0.004493644897220743
+          },
+          "candidate_context": {
+            "auc_drop": 1.0890191260363538e-05,
+            "ap_drop": -6.130248639076481e-05
+          },
+          "pair_renewal": {
+            "auc_drop": 0.005350978940754795,
+            "ap_drop": 0.008697718154699441
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.0002824560555611348,
+            "ap_drop": -0.0018367469735111424
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.0401242340300512,
+            "ap_drop": 0.042861761936374
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.01111308247420062,
+            "ap_drop": 0.03197350992291489
+          }
+        }
+      },
+      "high_destination_popularity": {
+        "queries": 2408,
+        "full_auc": 0.7714071059738119,
+        "full_ap": 0.776109417956726,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.00039567949949041264,
+            "ap_drop": -0.00012241082305538184
+          },
+          "source_context": {
+            "auc_drop": 0.005909093626633943,
+            "ap_drop": 0.00157755934518992
+          },
+          "candidate_context": {
+            "auc_drop": 0.00031815896991571613,
+            "ap_drop": 5.83533976017403e-06
+          },
+          "pair_renewal": {
+            "auc_drop": 0.007099178908989183,
+            "ap_drop": 0.009207166323782304
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.003926844534460609,
+            "ap_drop": 0.0021953334860371023
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.07410456746246359,
+            "ap_drop": 0.05487194862243897
+          },
+          "ordered_transition_2": {
+            "auc_drop": -0.007798846959010786,
+            "ap_drop": 0.0032341289923836967
+          }
+        }
+      },
+      "early_test_interval": {
+        "queries": 2458,
+        "full_auc": 0.7225695453623588,
+        "full_ap": 0.7404193884033653,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.00043447575906641056,
+            "ap_drop": -3.6725840420100596e-05
+          },
+          "source_context": {
+            "auc_drop": 0.0084929390378925,
+            "ap_drop": -0.0010505312497250212
+          },
+          "candidate_context": {
+            "auc_drop": 0.00017152827110319033,
+            "ap_drop": 4.408084673646062e-05
+          },
+          "pair_renewal": {
+            "auc_drop": 0.0029559247928254337,
+            "ap_drop": 0.007221056692375234
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.0018288808809259944,
+            "ap_drop": 0.0008520431484838609
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.06219861175202035,
+            "ap_drop": 0.05395986163191143
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.0024802910761383043,
+            "ap_drop": 0.013298054445731325
+          }
+        }
+      },
+      "late_test_interval": {
+        "queries": 2458,
+        "full_auc": 0.6908465805681917,
+        "full_ap": 0.7016099634660681,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.0004513030741794359,
+            "ap_drop": -0.00012686164693746319
+          },
+          "source_context": {
+            "auc_drop": 0.008351810277042682,
+            "ap_drop": 0.000860060853546026
+          },
+          "candidate_context": {
+            "auc_drop": 0.00016838349418039447,
+            "ap_drop": -2.4413343609142046e-05
+          },
+          "pair_renewal": {
+            "auc_drop": 0.009255575027425763,
+            "ap_drop": 0.009205308666161094
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.0024203196285058257,
+            "ap_drop": 0.0008555244653691471
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.05195921809149336,
+            "ap_drop": 0.04307593742894763
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.0029840622705554396,
+            "ap_drop": 0.014140619193761453
+          }
+        }
+      }
+    },
+    "grounded_fact_intervention": {
+      "component": "ordered_transition_1",
+      "queries": 510,
+      "top_auc_drop": {
+        "mean": 0.07635140330642061,
+        "std": 0.022945184453634693
+      },
+      "top_ap_drop": {
+        "mean": 0.0961456687229399,
+        "std": 0.021030349042074768
+      },
+      "matched_random_auc_drop": {
+        "mean": 0.0010547225426118523,
+        "std": 0.0022349911432390946
+      },
+      "matched_random_ap_drop": {
+        "mean": 0.0041940083313593,
+        "std": 0.001761492724729499
+      },
+      "top_mean_abs_logit_delta": {
+        "mean": 4.490064914899519,
+        "std": 0.13708203911846525
+      },
+      "matched_random_mean_abs_logit_delta": {
+        "mean": 0.48398602866366797,
+        "std": 0.01179505478391833
+      },
+      "delta_ratio": {
+        "mean": 9.285018089846124,
+        "std": 0.4914128856001925
+      },
+      "signed_margin_intervention": {
+        "supporting_queries": {
+          "mean": 447.3333333333333,
+          "std": 7.371114795831994
+        },
+        "supporting_top_mean_margin_drop": {
+          "mean": 3.240538454309117,
+          "std": 0.2151499559898616
+        },
+        "supporting_random_mean_margin_drop": {
+          "mean": 0.3944448148693549,
+          "std": 0.05963959865020331
+        },
+        "supporting_direction_consistency": {
+          "mean": 0.6735367188455936,
+          "std": 0.028722772715591118
+        },
+        "opposing_queries": {
+          "mean": 345.6666666666667,
+          "std": 10.503967504392488
+        },
+        "opposing_top_mean_margin_gain": {
+          "mean": 0.633455117613628,
+          "std": 0.42630021941743684
+        },
+        "opposing_random_mean_margin_gain": {
+          "mean": -0.04010932328922498,
+          "std": 0.039375214617222674
+        },
+        "opposing_direction_consistency": {
+          "mean": 0.5471701859605008,
+          "std": 0.020466888998490432
+        }
+      }
+    }
+  },
+  "retailrocket": {
+    "interaction": {
+      "full_auc": 0.8555147184892157,
+      "full_ap": 0.860167551352768,
+      "shapley": {
+        "direct_pair": {
+          "auc": {
+            "mean": 0.09114428695973457,
+            "std": 0.0011204702336068437
+          },
+          "ap": {
+            "mean": 0.08697626429474886,
+            "std": 0.003409898455342483
+          }
+        },
+        "source_context": {
+          "auc": {
+            "mean": -0.041845672109679065,
+            "std": 0.0011104216431721704
+          },
+          "ap": {
+            "mean": -0.032641409938171766,
+            "std": 0.001414967408366468
+          }
+        },
+        "candidate_context": {
+          "auc": {
+            "mean": 0.12473477431323292,
+            "std": 0.002155844033343975
+          },
+          "ap": {
+            "mean": 0.12023191265685636,
+            "std": 0.0032526955393352226
+          }
+        },
+        "pair_renewal": {
+          "auc": {
+            "mean": 0.04583626325553209,
+            "std": 0.0007972885344032241
+          },
+          "ap": {
+            "mean": 0.04296818104788289,
+            "std": 0.0027031809878604943
+          }
+        },
+        "positioned_recurrence": {
+          "auc": {
+            "mean": 0.11459923266098393,
+            "std": 0.0021595124193780945
+          },
+          "ap": {
+            "mean": 0.1046023703180815,
+            "std": 0.0024166836014507974
+          }
+        },
+        "ordered_transition_1": {
+          "auc": {
+            "mean": 0.01251399645544359,
+            "std": 0.004472782161180271
+          },
+          "ap": {
+            "mean": 0.021676103227134823,
+            "std": 0.0022454655108338577
+          }
+        },
+        "ordered_transition_2": {
+          "auc": {
+            "mean": 0.008531836953967533,
+            "std": 0.002073437737917375
+          },
+          "ap": {
+            "mean": 0.016354129746235346,
+            "std": 0.0014151596089228692
+          }
+        }
+      },
+      "pairwise_ap_synergy": [
+        {
+          "left": "source_context",
+          "right": "positioned_recurrence",
+          "mean": 0.01303471377762185
+        },
+        {
+          "left": "source_context",
+          "right": "candidate_context",
+          "mean": 0.00917356070067891
+        },
+        {
+          "left": "direct_pair",
+          "right": "source_context",
+          "mean": 0.004089757810505468
+        },
+        {
+          "left": "pair_renewal",
+          "right": "ordered_transition_1",
+          "mean": 8.452853347984401e-05
+        },
+        {
+          "left": "pair_renewal",
+          "right": "ordered_transition_2",
+          "mean": 4.751579822922144e-05
+        },
+        {
+          "left": "positioned_recurrence",
+          "right": "ordered_transition_2",
+          "mean": -3.5599693687382583e-06
+        },
+        {
+          "left": "source_context",
+          "right": "ordered_transition_2",
+          "mean": -1.5979355899475856e-05
+        },
+        {
+          "left": "ordered_transition_1",
+          "right": "ordered_transition_2",
+          "mean": -1.855413791018723e-05
+        },
+        {
+          "left": "direct_pair",
+          "right": "ordered_transition_2",
+          "mean": -7.059341931007583e-05
+        },
+        {
+          "left": "candidate_context",
+          "right": "ordered_transition_2",
+          "mean": -0.00010282880716353897
+        },
+        {
+          "left": "direct_pair",
+          "right": "ordered_transition_1",
+          "mean": -0.00017943566198989439
+        },
+        {
+          "left": "source_context",
+          "right": "ordered_transition_1",
+          "mean": -0.00026104818074886477
+        },
+        {
+          "left": "candidate_context",
+          "right": "ordered_transition_1",
+          "mean": -0.0008628554569063048
+        },
+        {
+          "left": "positioned_recurrence",
+          "right": "ordered_transition_1",
+          "mean": -0.0013132903402584735
+        },
+        {
+          "left": "source_context",
+          "right": "pair_renewal",
+          "mean": -0.0014354600273687919
+        },
+        {
+          "left": "direct_pair",
+          "right": "pair_renewal",
+          "mean": -0.0031632631630218824
+        },
+        {
+          "left": "direct_pair",
+          "right": "candidate_context",
+          "mean": -0.009678414352132495
+        },
+        {
+          "left": "candidate_context",
+          "right": "pair_renewal",
+          "mean": -0.011013137371659395
+        },
+        {
+          "left": "direct_pair",
+          "right": "positioned_recurrence",
+          "mean": -0.012650485444852403
+        },
+        {
+          "left": "pair_renewal",
+          "right": "positioned_recurrence",
+          "mean": -0.01922343455787312
+        },
+        {
+          "left": "candidate_context",
+          "right": "positioned_recurrence",
+          "mean": -0.04382152646154699
+        }
+      ]
+    },
+    "regime": {
+      "direct_recurrence_present": {
+        "queries": 308,
+        "full_auc": 0.8826776578399955,
+        "full_ap": 0.8806531742406615,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.010674931129476558,
+            "ap_drop": 0.010239938393268125
+          },
+          "source_context": {
+            "auc_drop": -0.015843734187890052,
+            "ap_drop": -0.00925705912552969
+          },
+          "candidate_context": {
+            "auc_drop": 0.027885534379040844,
+            "ap_drop": 0.02531646662635556
+          },
+          "pair_renewal": {
+            "auc_drop": -0.011370663968066555,
+            "ap_drop": -0.022985511595320623
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.024290914712992606,
+            "ap_drop": 0.011368463214901444
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.000337325012649677,
+            "ap_drop": 0.0007854165263128839
+          },
+          "ordered_transition_2": {
+            "auc_drop": 2.4596615505689812e-05,
+            "ap_drop": 3.673758392138312e-05
+          }
+        }
+      },
+      "direct_recurrence_absent": {
+        "queries": 19,
+        "full_auc": 0.38365650969529086,
+        "full_ap": 0.43350594810114734,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": -0.012927054478301003,
+            "ap_drop": -0.010087360722850361
+          },
+          "source_context": {
+            "auc_drop": -0.04339796860572483,
+            "ap_drop": -0.014228635305070495
+          },
+          "candidate_context": {
+            "auc_drop": 0.010618651892890149,
+            "ap_drop": -0.007026813203164395
+          },
+          "pair_renewal": {
+            "auc_drop": -0.0009233610341643494,
+            "ap_drop": -0.0014619883040935533
+          },
+          "positioned_recurrence": {
+            "auc_drop": -0.06001846722068329,
+            "ap_drop": -0.048282873290046435
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.004616805170821821,
+            "ap_drop": 0.0016238375947070598
+          },
+          "ordered_transition_2": {
+            "auc_drop": 0.0,
+            "ap_drop": 0.0
+          }
+        }
+      },
+      "low_source_activity": {
+        "queries": 164,
+        "full_auc": 0.8961059884989093,
+        "full_ap": 0.8985759022462007,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.006494150307356709,
+            "ap_drop": 0.007056889401777511
+          },
+          "source_context": {
+            "auc_drop": 0.0068907396391036935,
+            "ap_drop": 0.010761647614480433
+          },
+          "candidate_context": {
+            "auc_drop": 0.013781479278207387,
+            "ap_drop": 0.012183809214963981
+          },
+          "pair_renewal": {
+            "auc_drop": -0.015752032520325237,
+            "ap_drop": -0.015164742853332025
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.008477096966091632,
+            "ap_drop": -0.0024070426293290406
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.002912452905016849,
+            "ap_drop": 0.0011777614834748151
+          },
+          "ordered_transition_2": {
+            "auc_drop": -1.2393416617073605e-05,
+            "ap_drop": -4.683533399256016e-06
+          }
+        }
+      },
+      "high_source_activity": {
+        "queries": 163,
+        "full_auc": 0.8565872508060773,
+        "full_ap": 0.8457082465185283,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.007565207572735155,
+            "ap_drop": 0.008586963372429627
+          },
+          "source_context": {
+            "auc_drop": 0.012640044161742359,
+            "ap_drop": -0.00037790654017788583
+          },
+          "candidate_context": {
+            "auc_drop": 0.018887927032757507,
+            "ap_drop": 0.02153779738291665
+          },
+          "pair_renewal": {
+            "auc_drop": -0.005482579949063426,
+            "ap_drop": -0.022115266752546565
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.024690428695095818,
+            "ap_drop": 0.017908265298722987
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.0004014703852861142,
+            "ap_drop": 0.0004988495680691522
+          },
+          "ordered_transition_2": {
+            "auc_drop": 8.782164678133864e-05,
+            "ap_drop": 0.00010871884428361363
+          }
+        }
+      },
+      "low_destination_popularity": {
+        "queries": 172,
+        "full_auc": 0.8334572742022716,
+        "full_ap": 0.8298467312620267,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.010670182080403823,
+            "ap_drop": 0.009813707679352116
+          },
+          "source_context": {
+            "auc_drop": -0.004073147647376947,
+            "ap_drop": -0.005035546937020167
+          },
+          "candidate_context": {
+            "auc_drop": 0.027948665945556155,
+            "ap_drop": 0.024163878024880885
+          },
+          "pair_renewal": {
+            "auc_drop": -0.010073012439156296,
+            "ap_drop": -0.02204585305371687
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.030185235262303916,
+            "ap_drop": 0.01343760567183446
+          },
+          "ordered_transition_1": {
+            "auc_drop": -0.00020281233098973228,
+            "ap_drop": -0.0006532341622048262
+          },
+          "ordered_transition_2": {
+            "auc_drop": -2.2534703443303588e-05,
+            "ap_drop": -8.262454164890501e-06
+          }
+        }
+      },
+      "high_destination_popularity": {
+        "queries": 155,
+        "full_auc": 0.8806937218175511,
+        "full_ap": 0.8927820850992599,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.006035379812695085,
+            "ap_drop": 0.006245014169299863
+          },
+          "source_context": {
+            "auc_drop": -0.021831425598335064,
+            "ap_drop": -0.010225290431051618
+          },
+          "candidate_context": {
+            "auc_drop": 0.02436351023239684,
+            "ap_drop": 0.023570833772534255
+          },
+          "pair_renewal": {
+            "auc_drop": -0.00940686784599376,
+            "ap_drop": -0.014459321467408692
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.007811307665626062,
+            "ap_drop": 0.00292359791300593
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.002830385015608764,
+            "ap_drop": 0.002340085434336133
+          },
+          "ordered_transition_2": {
+            "auc_drop": 4.1623309053070066e-05,
+            "ap_drop": 5.609098928671674e-05
+          }
+        }
+      },
+      "early_test_interval": {
+        "queries": 168,
+        "full_auc": 0.8564696712018142,
+        "full_ap": 0.8517961272856723,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.011302437641723376,
+            "ap_drop": 0.009802027832752561
+          },
+          "source_context": {
+            "auc_drop": -0.006678713151927473,
+            "ap_drop": -0.009999045511927726
+          },
+          "candidate_context": {
+            "auc_drop": 0.031102371504157178,
+            "ap_drop": 0.024536972428697828
+          },
+          "pair_renewal": {
+            "auc_drop": -0.007475907029478461,
+            "ap_drop": -0.011274022886529456
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.016156462585034042,
+            "ap_drop": 0.004089063132151183
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.0023384353741496464,
+            "ap_drop": 0.0012959555228117352
+          },
+          "ordered_transition_2": {
+            "auc_drop": 7.086167800451904e-05,
+            "ap_drop": 8.464738985628865e-05
+          }
+        }
+      },
+      "late_test_interval": {
+        "queries": 159,
+        "full_auc": 0.8551217646981263,
+        "full_ap": 0.8717192008308331,
+        "deletion": {
+          "direct_pair": {
+            "auc_drop": 0.007344118771673069,
+            "ap_drop": 0.007734584878437108
+          },
+          "source_context": {
+            "auc_drop": -0.01914481230963964,
+            "ap_drop": -0.0063098680696502445
+          },
+          "candidate_context": {
+            "auc_drop": 0.021148952441227276,
+            "ap_drop": 0.022621321367575258
+          },
+          "pair_renewal": {
+            "auc_drop": -0.012473135292644008,
+            "ap_drop": -0.026031081191216887
+          },
+          "positioned_recurrence": {
+            "auc_drop": 0.022203763036799717,
+            "ap_drop": 0.013493687563624198
+          },
+          "ordered_transition_1": {
+            "auc_drop": 0.00030325804622706915,
+            "ap_drop": 0.0007527361595632831
+          },
+          "ordered_transition_2": {
+            "auc_drop": -1.3185132444637482e-05,
+            "ap_drop": 5.957280434657856e-06
+          }
+        }
+      }
+    },
+    "grounded_fact_intervention": {
+      "component": "candidate_context",
+      "queries": 324,
+      "top_auc_drop": {
+        "mean": 0.15058290673446317,
+        "std": 0.003922412428554276
+      },
+      "top_ap_drop": {
+        "mean": 0.16425627854177458,
+        "std": 0.011320853331414612
+      },
+      "matched_random_auc_drop": {
+        "mean": 0.11348017781541575,
+        "std": 0.009216380970925055
+      },
+      "matched_random_ap_drop": {
+        "mean": 0.09479693068883122,
+        "std": 0.013217568096049025
+      },
+      "top_mean_abs_logit_delta": {
+        "mean": 0.3895980809008126,
+        "std": 0.004549856668012474
+      },
+      "matched_random_mean_abs_logit_delta": {
+        "mean": 0.2278098717202919,
+        "std": 0.00942991052499471
+      },
+      "delta_ratio": {
+        "mean": 1.711602271921411,
+        "std": 0.05121136532891636
+      },
+      "signed_margin_intervention": {
+        "supporting_queries": {
+          "mean": 321.0,
+          "std": 1.0
+        },
+        "supporting_top_mean_margin_drop": {
+          "mean": 0.6908295524335243,
+          "std": 0.0034503640569280404
+        },
+        "supporting_random_mean_margin_drop": {
+          "mean": 0.4178147404861387,
+          "std": 0.01670832098128467
+        },
+        "supporting_direction_consistency": {
+          "mean": 0.9750841903536438,
+          "std": 0.0030376601928431496
+        },
+        "opposing_queries": {
+          "mean": 319.0,
+          "std": 2.0
+        },
+        "opposing_top_mean_margin_gain": {
+          "mean": 0.09704354662478183,
+          "std": 0.006573843754712889
+        },
+        "opposing_random_mean_margin_gain": {
+          "mean": 0.042776081936259314,
+          "std": 0.010082535511881156
+        },
+        "opposing_direction_consistency": {
+          "mean": 0.8161135597807752,
+          "std": 0.015391690276046019
+        }
+      }
+    }
+  }
+}

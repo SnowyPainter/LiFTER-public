@@ -1,0 +1,69 @@
+{
+  "dataset": "wikipedia",
+  "seed": 7,
+  "events": 32768,
+  "epochs": 10,
+  "metrics": {
+    "auc": 0.9729216086560151,
+    "ap": 0.9786450564591365,
+    "soft_projection_auc": 0.9729846490197234,
+    "soft_projection_ap": 0.9786892705470334
+  },
+  "query": {
+    "predicate": "Link",
+    "source": 5619,
+    "destination": 9176,
+    "timestamp": 2568184.0
+  },
+  "candidate_logit": 9.801883697509766,
+  "prior_rule_contribution": -0.7742064595222473,
+  "nonzero_rule_executions": 119,
+  "reconstructed_logit": 9.80188302337326,
+  "decomposition_error": 6.741365048412717e-7,
+  "top_executions": [
+    {
+      "rule_id": 166,
+      "body": "P6(X,Y,T1) & P6(Z2,Y,T2)",
+      "grounded_facts": [
+        [5619, 9176, 2352512.0],
+        [2959, 9176, 2561495.0]
+      ],
+      "contribution": 1.3313581943511963
+    },
+    {
+      "rule_id": 122,
+      "body": "P1(X,Y,T1) & P2(Z2,Y,T2)",
+      "grounded_facts": [
+        [5619, 9176, 2537213.0],
+        [5619, 9176, 2537182.0]
+      ],
+      "contribution": 1.2257286310195923
+    },
+    {
+      "rule_id": 126,
+      "body": "P1(X,Y,T1) & P6(Z2,Y,T2)",
+      "grounded_facts": [
+        [5619, 9176, 2537213.0],
+        [2959, 9176, 2561495.0]
+      ],
+      "contribution": 1.1167824268341064
+    },
+    {
+      "rule_id": 129,
+      "body": "P2(X,Y,T1) & P1(Z2,Y,T2)",
+      "grounded_facts": [
+        [5619, 9176, 2537182.0],
+        [5619, 9176, 2537213.0]
+      ],
+      "contribution": 0.8669154644012451
+    },
+    {
+      "rule_id": 17,
+      "body": "P1(X,Z,T)",
+      "grounded_facts": [
+        [5619, 9176, 2537213.0]
+      ],
+      "contribution": -0.47077861428260803
+    }
+  ]
+}

@@ -1,0 +1,618 @@
+{
+  "wikipedia": {
+    "LiFTER": {
+      "historical_auc_mean": 0.891987947007971,
+      "historical_auc_sample_std": 0.0007942067935616315,
+      "historical_ap_mean": 0.896323054215309,
+      "historical_ap_sample_std": 0.0013415952291642391,
+      "random_auc_mean": 0.9747207382921059,
+      "random_auc_sample_std": 0.0006690780472394577,
+      "random_ap_mean": 0.9803733299385881,
+      "random_ap_sample_std": 0.00035193749040262273,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 2,
+      "historical_ap_rank": 2,
+      "random_auc_rank": 5,
+      "random_ap_rank": 5
+    },
+    "EdgeBank": {
+      "historical_auc_mean": 0.6707689178193653,
+      "historical_auc_sample_std": 0.0,
+      "historical_ap_mean": 0.6066703544567291,
+      "historical_ap_sample_std": 0.0,
+      "random_auc_mean": 0.9262611879576892,
+      "random_auc_sample_std": 0.0006351706670462004,
+      "random_ap_mean": 0.9246474236201528,
+      "random_ap_sample_std": 0.0012615402168377977,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 8,
+      "historical_ap_rank": 8,
+      "random_auc_rank": 8,
+      "random_ap_rank": 8
+    },
+    "TGN": {
+      "historical_auc_mean": 0.9172363402476496,
+      "historical_auc_sample_std": 0.002248725803714925,
+      "historical_ap_mean": 0.9177711856648946,
+      "historical_ap_sample_std": 0.002185457786944518,
+      "random_auc_mean": 0.9582182869109088,
+      "random_auc_sample_std": 0.002524243475516846,
+      "random_ap_mean": 0.9606036145854568,
+      "random_ap_sample_std": 0.0023733585889727333,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 1,
+      "historical_ap_rank": 1,
+      "random_auc_rank": 7,
+      "random_ap_rank": 7
+    },
+    "TGAT": {
+      "historical_auc_mean": 0.8732531936588939,
+      "historical_auc_sample_std": 0.0012546607161279487,
+      "historical_ap_mean": 0.8898504000499134,
+      "historical_ap_sample_std": 0.001326610568255137,
+      "random_auc_mean": 0.9743723921799439,
+      "random_auc_sample_std": 0.0013371543486979842,
+      "random_ap_mean": 0.9801362828144647,
+      "random_ap_sample_std": 0.0009077083651992504,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 4,
+      "historical_ap_rank": 4,
+      "random_auc_rank": 6,
+      "random_ap_rank": 6
+    },
+    "DyGFormer": {
+      "historical_auc_mean": 0.8716876947416903,
+      "historical_auc_sample_std": 0.0026484218626855343,
+      "historical_ap_mean": 0.8874817557466228,
+      "historical_ap_sample_std": 0.004189985415126598,
+      "random_auc_mean": 0.9767720914509956,
+      "random_auc_sample_std": 0.001814795174573518,
+      "random_ap_mean": 0.9816861059127575,
+      "random_ap_sample_std": 0.0010000836124775352,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 5,
+      "historical_ap_rank": 5,
+      "random_auc_rank": 3,
+      "random_ap_rank": 3
+    },
+    "GraphMixer": {
+      "historical_auc_mean": 0.873999747148901,
+      "historical_auc_sample_std": 0.0026037671185220055,
+      "historical_ap_mean": 0.8921167600821033,
+      "historical_ap_sample_std": 0.0036727267827215897,
+      "random_auc_mean": 0.9753592314540367,
+      "random_auc_sample_std": 0.002057341216733518,
+      "random_ap_mean": 0.9809116841355494,
+      "random_ap_sample_std": 0.0010219580167547964,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 3,
+      "historical_ap_rank": 3,
+      "random_auc_rank": 4,
+      "random_ap_rank": 4
+    },
+    "CRAFT": {
+      "historical_auc_mean": 0.8567903968112625,
+      "historical_auc_sample_std": 0.011664593795205484,
+      "historical_ap_mean": 0.8603730059373541,
+      "historical_ap_sample_std": 0.012726573797617186,
+      "random_auc_mean": 0.9789605182636506,
+      "random_auc_sample_std": 0.0008620377805419394,
+      "random_ap_mean": 0.9833992457600095,
+      "random_ap_sample_std": 0.00029373087321569324,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 6,
+      "historical_ap_rank": 6,
+      "random_auc_rank": 1,
+      "random_ap_rank": 1
+    },
+    "CRAFT-R": {
+      "historical_auc_mean": 0.7602552278881907,
+      "historical_auc_sample_std": 0.014928167864549386,
+      "historical_ap_mean": 0.7148004627190655,
+      "historical_ap_sample_std": 0.026316791486338,
+      "random_auc_mean": 0.9778930182200651,
+      "random_auc_sample_std": 0.000990102080200099,
+      "random_ap_mean": 0.9818938152422653,
+      "random_ap_sample_std": 0.0010756289119169995,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 7,
+      "historical_ap_rank": 7,
+      "random_auc_rank": 2,
+      "random_ap_rank": 2
+    }
+  },
+  "reddit": {
+    "LiFTER": {
+      "historical_auc_mean": 0.8352277028143877,
+      "historical_auc_sample_std": 0.0018731065721686,
+      "historical_ap_mean": 0.8272329351434805,
+      "historical_ap_sample_std": 0.0037911069145602277,
+      "random_auc_mean": 0.9664578162382157,
+      "random_auc_sample_std": 0.0008522598554401041,
+      "random_ap_mean": 0.9720358145099911,
+      "random_ap_sample_std": 0.0007402204026851052,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 1,
+      "historical_ap_rank": 1,
+      "random_auc_rank": 3,
+      "random_ap_rank": 4
+    },
+    "EdgeBank": {
+      "historical_auc_mean": 0.6307973962571196,
+      "historical_auc_sample_std": 0.0,
+      "historical_ap_mean": 0.5792041357177469,
+      "historical_ap_sample_std": 0.0,
+      "random_auc_mean": 0.8736438839164632,
+      "random_auc_sample_std": 0.0005119225952855161,
+      "random_ap_mean": 0.8720981811724031,
+      "random_ap_sample_std": 0.0010156581866123376,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 8,
+      "historical_ap_rank": 8,
+      "random_auc_rank": 8,
+      "random_ap_rank": 8
+    },
+    "TGN": {
+      "historical_auc_mean": 0.8184484352031405,
+      "historical_auc_sample_std": 0.0004803356166764292,
+      "historical_ap_mean": 0.8109555084646864,
+      "historical_ap_sample_std": 0.0028846558931146524,
+      "random_auc_mean": 0.9463188717180391,
+      "random_auc_sample_std": 0.0010651094670109705,
+      "random_ap_mean": 0.9476191305285766,
+      "random_ap_sample_std": 0.0020484097255883097,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 2,
+      "historical_ap_rank": 2,
+      "random_auc_rank": 7,
+      "random_ap_rank": 7
+    },
+    "TGAT": {
+      "historical_auc_mean": 0.803848229038186,
+      "historical_auc_sample_std": 0.001485314569777741,
+      "historical_ap_mean": 0.8084060396842163,
+      "historical_ap_sample_std": 0.002354072156220319,
+      "random_auc_mean": 0.9630469746363259,
+      "random_auc_sample_std": 0.001627851008836205,
+      "random_ap_mean": 0.9708350856419832,
+      "random_ap_sample_std": 0.0005345318835859289,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 5,
+      "historical_ap_rank": 5,
+      "random_auc_rank": 6,
+      "random_ap_rank": 6
+    },
+    "DyGFormer": {
+      "historical_auc_mean": 0.8045750380186979,
+      "historical_auc_sample_std": 0.0030312142559068486,
+      "historical_ap_mean": 0.8102378801840368,
+      "historical_ap_sample_std": 0.003593085203175199,
+      "random_auc_mean": 0.9642832926498508,
+      "random_auc_sample_std": 0.0027634636611621444,
+      "random_ap_mean": 0.9716205140406643,
+      "random_ap_sample_std": 0.001500995870857008,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 4,
+      "historical_ap_rank": 3,
+      "random_auc_rank": 5,
+      "random_ap_rank": 5
+    },
+    "GraphMixer": {
+      "historical_auc_mean": 0.8049338460312805,
+      "historical_auc_sample_std": 0.0008015142380343678,
+      "historical_ap_mean": 0.808918754873687,
+      "historical_ap_sample_std": 0.0016958273693911208,
+      "random_auc_mean": 0.9649607162190821,
+      "random_auc_sample_std": 0.0012128267965775754,
+      "random_ap_mean": 0.9721352727944849,
+      "random_ap_sample_std": 0.00036466083629277163,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 3,
+      "historical_ap_rank": 4,
+      "random_auc_rank": 4,
+      "random_ap_rank": 3
+    },
+    "CRAFT": {
+      "historical_auc_mean": 0.7959894590939556,
+      "historical_auc_sample_std": 0.005745289984774974,
+      "historical_ap_mean": 0.7694587060917786,
+      "historical_ap_sample_std": 0.00716672666749191,
+      "random_auc_mean": 0.9753017358285869,
+      "random_auc_sample_std": 0.0007066741691788064,
+      "random_ap_mean": 0.9789725017450948,
+      "random_ap_sample_std": 0.0005333943618335015,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 6,
+      "historical_ap_rank": 6,
+      "random_auc_rank": 1,
+      "random_ap_rank": 1
+    },
+    "CRAFT-R": {
+      "historical_auc_mean": 0.6881141487265419,
+      "historical_auc_sample_std": 0.0066344782039909605,
+      "historical_ap_mean": 0.6072687425411863,
+      "historical_ap_sample_std": 0.005318632038784932,
+      "random_auc_mean": 0.9751753378649017,
+      "random_auc_sample_std": 0.0008822422446713395,
+      "random_ap_mean": 0.9778572434052492,
+      "random_ap_sample_std": 0.0003823259397669719,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 7,
+      "historical_ap_rank": 7,
+      "random_auc_rank": 2,
+      "random_ap_rank": 2
+    }
+  },
+  "mooc": {
+    "LiFTER": {
+      "historical_auc_mean": 0.8672382215966508,
+      "historical_auc_sample_std": 0.0010349524368533914,
+      "historical_ap_mean": 0.8507139717273595,
+      "historical_ap_sample_std": 0.0007809203146480063,
+      "random_auc_mean": 0.97051686808687,
+      "random_auc_sample_std": 0.0003797877400251736,
+      "random_ap_mean": 0.9650829210452216,
+      "random_ap_sample_std": 0.002645368787751107,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 2,
+      "historical_ap_rank": 1,
+      "random_auc_rank": 3,
+      "random_ap_rank": 3
+    },
+    "EdgeBank": {
+      "historical_auc_mean": 0.3042107404393816,
+      "historical_auc_sample_std": 0.0,
+      "historical_ap_mean": 0.42664595653654136,
+      "historical_ap_sample_std": 0.0,
+      "random_auc_mean": 0.7186059126661243,
+      "random_auc_sample_std": 0.0018900677874649143,
+      "random_ap_mean": 0.6744846785080991,
+      "random_ap_sample_std": 0.0024129760732964373,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 8,
+      "historical_ap_rank": 8,
+      "random_auc_rank": 8,
+      "random_ap_rank": 8
+    },
+    "TGN": {
+      "historical_auc_mean": 0.8251903610711485,
+      "historical_auc_sample_std": 0.002106584857055169,
+      "historical_ap_mean": 0.7790146663730897,
+      "historical_ap_sample_std": 0.0012857986395650813,
+      "random_auc_mean": 0.9596964699934214,
+      "random_auc_sample_std": 0.002295162401771089,
+      "random_ap_mean": 0.9497565116097944,
+      "random_ap_sample_std": 0.0017037518918256772,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 6,
+      "historical_ap_rank": 6,
+      "random_auc_rank": 7,
+      "random_ap_rank": 7
+    },
+    "TGAT": {
+      "historical_auc_mean": 0.8350093959865584,
+      "historical_auc_sample_std": 0.00512122974386671,
+      "historical_ap_mean": 0.8007963663132832,
+      "historical_ap_sample_std": 0.00802267717983575,
+      "random_auc_mean": 0.9677103822658416,
+      "random_auc_sample_std": 0.0007848799446765522,
+      "random_ap_mean": 0.960932112567811,
+      "random_ap_sample_std": 0.0008824035642823294,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 5,
+      "historical_ap_rank": 4,
+      "random_auc_rank": 6,
+      "random_ap_rank": 4
+    },
+    "DyGFormer": {
+      "historical_auc_mean": 0.8590203677822128,
+      "historical_auc_sample_std": 0.007647488777023506,
+      "historical_ap_mean": 0.8336920519924329,
+      "historical_ap_sample_std": 0.014481052700523678,
+      "random_auc_mean": 0.9721299179621492,
+      "random_auc_sample_std": 0.0009914537502079476,
+      "random_ap_mean": 0.9676213564943325,
+      "random_ap_sample_std": 0.0018190858003177082,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 3,
+      "historical_ap_rank": 3,
+      "random_auc_rank": 2,
+      "random_ap_rank": 2
+    },
+    "GraphMixer": {
+      "historical_auc_mean": 0.8709452377374114,
+      "historical_auc_sample_std": 0.0010020480319109138,
+      "historical_ap_mean": 0.8483579806773557,
+      "historical_ap_sample_std": 0.002344020732709514,
+      "random_auc_mean": 0.9744699147467527,
+      "random_auc_sample_std": 0.00045328511384936537,
+      "random_ap_mean": 0.9698557394271037,
+      "random_ap_sample_std": 0.0005833379663152616,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 1,
+      "historical_ap_rank": 2,
+      "random_auc_rank": 1,
+      "random_ap_rank": 1
+    },
+    "CRAFT": {
+      "historical_auc_mean": 0.840606905808745,
+      "historical_auc_sample_std": 0.004115273003101963,
+      "historical_ap_mean": 0.7941004016937805,
+      "historical_ap_sample_std": 0.0115029614322192,
+      "random_auc_mean": 0.9686531670772531,
+      "random_auc_sample_std": 0.002185350974805647,
+      "random_ap_mean": 0.9594582085684483,
+      "random_ap_sample_std": 0.002826111713944964,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 4,
+      "historical_ap_rank": 5,
+      "random_auc_rank": 4,
+      "random_ap_rank": 5
+    },
+    "CRAFT-R": {
+      "historical_auc_mean": 0.823676688905205,
+      "historical_auc_sample_std": 0.01751411946565164,
+      "historical_ap_mean": 0.7643363757841585,
+      "historical_ap_sample_std": 0.03284932775591283,
+      "random_auc_mean": 0.9679969569593693,
+      "random_auc_sample_std": 0.0014650802556179883,
+      "random_ap_mean": 0.9565468154104143,
+      "random_ap_sample_std": 0.004859158001513844,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 7,
+      "historical_ap_rank": 7,
+      "random_auc_rank": 5,
+      "random_ap_rank": 6
+    }
+  },
+  "lastfm": {
+    "LiFTER": {
+      "historical_auc_mean": 0.7046340481025078,
+      "historical_auc_sample_std": 0.0048566387587204,
+      "historical_ap_mean": 0.7174505046804904,
+      "historical_ap_sample_std": 0.004409620030810617,
+      "random_auc_mean": 0.8153983395136476,
+      "random_auc_sample_std": 0.0004409637359556155,
+      "random_ap_mean": 0.8462015718813738,
+      "random_ap_sample_std": 0.0008405825363923728,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 1,
+      "historical_ap_rank": 1,
+      "random_auc_rank": 8,
+      "random_ap_rank": 7
+    },
+    "EdgeBank": {
+      "historical_auc_mean": 0.3888323840520749,
+      "historical_auc_sample_std": 0.0,
+      "historical_ap_mean": 0.4513920907647607,
+      "historical_ap_sample_std": 0.0,
+      "random_auc_mean": 0.8523528614049363,
+      "random_auc_sample_std": 0.00162839842128057,
+      "random_ap_mean": 0.8231928385184416,
+      "random_ap_sample_std": 0.0027393194245967055,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 8,
+      "historical_ap_rank": 8,
+      "random_auc_rank": 6,
+      "random_ap_rank": 8
+    },
+    "TGN": {
+      "historical_auc_mean": 0.6143381855586105,
+      "historical_auc_sample_std": 0.008706797105949873,
+      "historical_ap_mean": 0.6297955888248575,
+      "historical_ap_sample_std": 0.004589788284398549,
+      "random_auc_mean": 0.8468315020800768,
+      "random_auc_sample_std": 0.00875921321245405,
+      "random_ap_mean": 0.8507495249136703,
+      "random_ap_sample_std": 0.008490677143084472,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 3,
+      "historical_ap_rank": 6,
+      "random_auc_rank": 7,
+      "random_ap_rank": 6
+    },
+    "TGAT": {
+      "historical_auc_mean": 0.5630758183095754,
+      "historical_auc_sample_std": 0.0038115185562152326,
+      "historical_ap_mean": 0.6419826483529574,
+      "historical_ap_sample_std": 0.005421047957170472,
+      "random_auc_mean": 0.9008473422110937,
+      "random_auc_sample_std": 0.001768112769680226,
+      "random_ap_mean": 0.9182329006990149,
+      "random_ap_sample_std": 0.0016025428348940861,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 6,
+      "historical_ap_rank": 5,
+      "random_auc_rank": 4,
+      "random_ap_rank": 3
+    },
+    "DyGFormer": {
+      "historical_auc_mean": 0.56853973718051,
+      "historical_auc_sample_std": 0.0029213707274857057,
+      "historical_ap_mean": 0.6433553678436011,
+      "historical_ap_sample_std": 0.0042877413099183005,
+      "random_auc_mean": 0.9055079843679208,
+      "random_auc_sample_std": 0.002009447171813882,
+      "random_ap_mean": 0.9211944270390504,
+      "random_ap_sample_std": 0.0017325190276835717,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 5,
+      "historical_ap_rank": 4,
+      "random_auc_rank": 3,
+      "random_ap_rank": 2
+    },
+    "GraphMixer": {
+      "historical_auc_mean": 0.5958676348496896,
+      "historical_auc_sample_std": 0.00260630394477425,
+      "historical_ap_mean": 0.6568762009378929,
+      "historical_ap_sample_std": 0.004748289826209025,
+      "random_auc_mean": 0.9141090733876177,
+      "random_auc_sample_std": 0.003643217016543223,
+      "random_ap_mean": 0.9276932711919634,
+      "random_ap_sample_std": 0.0026312397196615617,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 4,
+      "historical_ap_rank": 2,
+      "random_auc_rank": 1,
+      "random_ap_rank": 1
+    },
+    "CRAFT": {
+      "historical_auc_mean": 0.6666719907188254,
+      "historical_auc_sample_std": 0.006363958871920938,
+      "historical_ap_mean": 0.6521172900727394,
+      "historical_ap_sample_std": 0.01393834569023895,
+      "random_auc_mean": 0.880941145665405,
+      "random_auc_sample_std": 0.005031112879344855,
+      "random_ap_mean": 0.8885287570343301,
+      "random_ap_sample_std": 0.005733862693741127,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 2,
+      "historical_ap_rank": 3,
+      "random_auc_rank": 5,
+      "random_ap_rank": 5
+    },
+    "CRAFT-R": {
+      "historical_auc_mean": 0.5534639179881902,
+      "historical_auc_sample_std": 0.007048865598079624,
+      "historical_ap_mean": 0.60083673664836,
+      "historical_ap_sample_std": 0.008427228526169556,
+      "random_auc_mean": 0.9087131258354348,
+      "random_auc_sample_std": 0.0016950641585747285,
+      "random_ap_mean": 0.9155630537268669,
+      "random_ap_sample_std": 0.0007898275971504959,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "historical_auc_rank": 7,
+      "historical_ap_rank": 7,
+      "random_auc_rank": 2,
+      "random_ap_rank": 4
+    }
+  }
+}

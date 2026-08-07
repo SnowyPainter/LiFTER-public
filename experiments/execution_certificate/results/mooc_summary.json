@@ -1,0 +1,41 @@
+{
+  "dataset": "mooc",
+  "queries": 4916,
+  "eligible_tamper_queries": 4916,
+  "clean_acceptance": 1.0,
+  "trace_completeness": 1.0,
+  "grounding_validity": 1.0,
+  "temporal_validity": 1.0,
+  "clean_failure_counts": {},
+  "generation_ms_per_query": 6.379418593412303,
+  "verification_ms_per_query": 0.24801484544809219,
+  "tamper_detection": {
+    "entity_change": 1.0,
+    "timestamp_change": 1.0,
+    "fact_omission": 1.0,
+    "fact_insertion": 1.0,
+    "contribution_change": 1.0,
+    "duplicate_with_logit_compensation": 1.0,
+    "execution_omission_with_logit_compensation": 1.0,
+    "contribution_redistribution": 1.0,
+    "operand_contribution_logit": 1.0,
+    "temporal_order_with_operand_swap": 1.0
+  },
+  "max_clean_logit_error": 1.2070965969002145e-06,
+  "tamper_eligible": {
+    "entity_change": 4916,
+    "timestamp_change": 4916,
+    "fact_omission": 4916,
+    "fact_insertion": 4916,
+    "contribution_change": 4916,
+    "duplicate_with_logit_compensation": 4916,
+    "execution_omission_with_logit_compensation": 4916,
+    "contribution_redistribution": 4825,
+    "operand_contribution_logit": 4825,
+    "temporal_order_with_operand_swap": 4732
+  },
+  "positive_control_acceptance": {
+    "execution_permutation": 1.0,
+    "json_roundtrip": 1.0
+  }
+}

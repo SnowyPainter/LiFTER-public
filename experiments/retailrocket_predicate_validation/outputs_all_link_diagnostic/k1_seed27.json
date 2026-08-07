@@ -1,0 +1,488 @@
+{
+  "created_at": "2026-08-04T18:09:52.443685+00:00",
+  "k": 1,
+  "seed": 27,
+  "normal": {
+    "train_loss": 0.47432792511853306,
+    "eval_loss": 0.926147711277008,
+    "primary_metric": 0.5216342859469519,
+    "accuracy": 0.5743490642799024,
+    "auc": 0.5216342859469519,
+    "average_precision": 0.6220207722718422,
+    "ap": 0.6220207722718422,
+    "historical_negative_eval_loss": 1.0960473001003266,
+    "historical_negative_auc": 0.43650176090956216,
+    "historical_negative_average_precision": 0.5111733571492876,
+    "historical_negative_ap": 0.5111733571492876,
+    "historical_negative_coverage": 0.34296175752644426,
+    "historical_negative_pairwise_accuracy": 0.35882831570382423,
+    "historical_negative_strategy": "uniform",
+    "most_recent_historical_negative_auc": 0.41213133283590686,
+    "most_recent_historical_negative_average_precision": 0.4928456545058036,
+    "most_recent_historical_negative_ap": 0.4928456545058036,
+    "most_recent_historical_negative_coverage": 0.34296175752644426,
+    "most_recent_historical_negative_pairwise_accuracy": 0.3289259560618389,
+    "proof_matched_auc": NaN,
+    "proof_matched_ap": NaN,
+    "proof_matched_pairwise_accuracy": NaN,
+    "proof_matched_coverage": 0.0,
+    "grounded_deletion": {
+      "queries": 0,
+      "top_mean_abs_logit_delta": NaN,
+      "random_mean_abs_logit_delta": NaN
+    },
+    "contrastive_explanation": null,
+    "examples": 32768.0,
+    "aggregation_operator": "finite_temporal_logic_program",
+    "predicate_diagnostics": {
+      "assignment_mode": "random_fixed",
+      "execution_mode": "hard",
+      "predicate_count": 1,
+      "mean_active_proofs_per_query": 2.052888527257933,
+      "top_proof_absolute_logit_fraction": {
+        "1": 0.8929010507225554,
+        "3": 0.973396764017878,
+        "5": 0.9948858252815157
+      },
+      "max_logit_reconstruction_error": 3.814697265625e-06,
+      "mean_logit_reconstruction_error": 5.024585697081537e-08,
+      "effective_rule_count": 5.014840224891501,
+      "rules_for_90pct_absolute_contribution": 6,
+      "component_absolute_mass": [
+        302.33208656311035,
+        0.0,
+        5426.234527587891,
+        0.0,
+        0.0,
+        981.5736312866211,
+        954.2434501647949,
+        363.623996257782,
+        171.05677235126495,
+        81.52247849106789,
+        57.07056739926338,
+        35.20940688252449,
+        25.67765086889267,
+        15.140775620937347,
+        15.914323925971985,
+        8.79302990436554,
+        12.660874366760254,
+        1730.0212004074801,
+        375.1411375951793
+      ],
+      "predicate_role_profiles": {
+        "all": [
+          [
+            302.33208656311035,
+            0.0,
+            5426.234527587891,
+            0.0,
+            0.0,
+            981.5736312866211,
+            954.2434501647949,
+            786.6698799133301,
+            1730.0212020874023,
+            375.1411380767822
+          ]
+        ],
+        "seen_entities": [
+          [
+            74.41926264762878,
+            0.0,
+            2312.757225036621,
+            0.0,
+            0.0,
+            268.0887174606323,
+            796.1702499389648,
+            414.8190746307373,
+            1149.929370880127,
+            303.2352547645569
+          ]
+        ],
+        "unseen_entity": [
+          [
+            227.91284942626953,
+            0.0,
+            3113.477005004883,
+            0.0,
+            0.0,
+            713.4850463867188,
+            158.0732536315918,
+            371.85080337524414,
+            580.0918502807617,
+            71.90589332580566
+          ]
+        ],
+        "early_interval": [
+          [
+            142.46821403503418,
+            0.0,
+            3001.055633544922,
+            0.0,
+            0.0,
+            449.41375732421875,
+            363.1465873718262,
+            340.2214050292969,
+            833.9145965576172,
+            230.86358261108398
+          ]
+        ],
+        "later_interval": [
+          [
+            159.86387729644775,
+            0.0,
+            2425.1790161132812,
+            0.0,
+            0.0,
+            532.1598892211914,
+            591.0968608856201,
+            446.44847679138184,
+            896.1066131591797,
+            144.2775559425354
+          ]
+        ],
+        "low_source_activity": [
+          [
+            210.08706092834473,
+            0.0,
+            1996.9174270629883,
+            0.0,
+            0.0,
+            655.3363265991211,
+            152.1814193725586,
+            345.74382400512695,
+            540.4579544067383,
+            54.80860862135887
+          ]
+        ],
+        "high_source_activity": [
+          [
+            92.24505758285522,
+            0.0,
+            3429.316421508789,
+            0.0,
+            0.0,
+            326.23741912841797,
+            802.0620765686035,
+            440.92604637145996,
+            1189.5632400512695,
+            320.3325309753418
+          ]
+        ],
+        "low_destination_popularity": [
+          [
+            136.5048246383667,
+            0.0,
+            2282.9714736938477,
+            0.0,
+            0.0,
+            263.05473709106445,
+            90.29063034057617,
+            220.30801677703857,
+            82.67743444442749,
+            20.640795350074768
+          ]
+        ],
+        "high_destination_popularity": [
+          [
+            165.82730293273926,
+            0.0,
+            3143.2623443603516,
+            0.0,
+            0.0,
+            718.5189399719238,
+            863.9528617858887,
+            566.3618564605713,
+            1647.343734741211,
+            354.5003318786621
+          ]
+        ]
+      },
+      "role_reuse": {
+        "seen_to_unseen_entity": {
+          "weighted_cosine": 0.9236456122679164,
+          "comparable_predicates": 1,
+          "left_queries": 643,
+          "right_queries": 4273
+        },
+        "early_to_later_interval": {
+          "weighted_cosine": 0.9878860867044278,
+          "comparable_predicates": 1,
+          "left_queries": 2458,
+          "right_queries": 2458
+        },
+        "source_activity_strata": {
+          "weighted_cosine": 0.9600659723572662,
+          "comparable_predicates": 1,
+          "left_queries": 3977,
+          "right_queries": 939
+        },
+        "destination_popularity_strata": {
+          "weighted_cosine": 0.8821365452228339,
+          "comparable_predicates": 1,
+          "left_queries": 2663,
+          "right_queries": 2253
+        }
+      }
+    },
+    "checkpoint": "/workspace/nsctdg/experiments/retailrocket_predicate_validation/checkpoints/k1_seed27/retailrocket_LiFTER_seed27.pt",
+    "effective_implementation": "LiFTER",
+    "attention_active_blocks": 0.0,
+    "attention_replacements": 0.0,
+    "trainable_parameters": 262822787
+  },
+  "global_predicate_shuffle": {
+    "train_loss": 0.0,
+    "eval_loss": 0.926147711277008,
+    "primary_metric": 0.5216342859469519,
+    "accuracy": 0.5743490642799024,
+    "auc": 0.5216342859469519,
+    "average_precision": 0.6220207722718422,
+    "ap": 0.6220207722718422,
+    "historical_negative_eval_loss": 1.0960473001003266,
+    "historical_negative_auc": 0.43650176090956216,
+    "historical_negative_average_precision": 0.5111733571492876,
+    "historical_negative_ap": 0.5111733571492876,
+    "historical_negative_coverage": 0.34296175752644426,
+    "historical_negative_pairwise_accuracy": 0.35882831570382423,
+    "historical_negative_strategy": "uniform",
+    "most_recent_historical_negative_auc": 0.41213133283590686,
+    "most_recent_historical_negative_average_precision": 0.4928456545058036,
+    "most_recent_historical_negative_ap": 0.4928456545058036,
+    "most_recent_historical_negative_coverage": 0.34296175752644426,
+    "most_recent_historical_negative_pairwise_accuracy": 0.3289259560618389,
+    "proof_matched_auc": NaN,
+    "proof_matched_ap": NaN,
+    "proof_matched_pairwise_accuracy": NaN,
+    "proof_matched_coverage": 0.0,
+    "grounded_deletion": {
+      "queries": 0,
+      "top_mean_abs_logit_delta": NaN,
+      "random_mean_abs_logit_delta": NaN
+    },
+    "contrastive_explanation": null,
+    "examples": 32768.0,
+    "aggregation_operator": "finite_temporal_logic_program",
+    "predicate_diagnostics": {
+      "assignment_mode": "random_fixed",
+      "execution_mode": "hard",
+      "predicate_count": 1,
+      "mean_active_proofs_per_query": 2.052888527257933,
+      "top_proof_absolute_logit_fraction": {
+        "1": 0.8929010506801192,
+        "3": 0.9733967640057534,
+        "5": 0.9948858252330172
+      },
+      "max_logit_reconstruction_error": 3.814697265625e-06,
+      "mean_logit_reconstruction_error": 5.0439850932655536e-08,
+      "effective_rule_count": 5.014840224533068,
+      "rules_for_90pct_absolute_contribution": 6,
+      "component_absolute_mass": [
+        302.33208656311035,
+        0.0,
+        5426.234527587891,
+        0.0,
+        0.0,
+        981.5736312866211,
+        954.2434492111206,
+        363.623996257782,
+        171.05677235126495,
+        81.52247849106789,
+        57.07056739926338,
+        35.20940688252449,
+        25.67765086889267,
+        15.140775620937347,
+        15.914323925971985,
+        8.79302990436554,
+        12.660874366760254,
+        1730.0212004074801,
+        375.1411375951793
+      ],
+      "predicate_role_profiles": {
+        "all": [
+          [
+            302.33208656311035,
+            0.0,
+            5426.234527587891,
+            0.0,
+            0.0,
+            981.5736312866211,
+            954.2434492111206,
+            786.6698799133301,
+            1730.0212020874023,
+            375.1411380767822
+          ]
+        ],
+        "seen_entities": [
+          [
+            74.41926264762878,
+            0.0,
+            2312.757225036621,
+            0.0,
+            0.0,
+            268.0887174606323,
+            796.1702346801758,
+            414.8190746307373,
+            1149.929370880127,
+            303.2352547645569
+          ]
+        ],
+        "unseen_entity": [
+          [
+            227.91284942626953,
+            0.0,
+            3113.477005004883,
+            0.0,
+            0.0,
+            713.4850463867188,
+            158.07325553894043,
+            371.85080337524414,
+            580.0918502807617,
+            71.90589332580566
+          ]
+        ],
+        "early_interval": [
+          [
+            142.46821403503418,
+            0.0,
+            3001.055633544922,
+            0.0,
+            0.0,
+            449.41375732421875,
+            363.1465673446655,
+            340.2214050292969,
+            833.9145965576172,
+            230.86358261108398
+          ]
+        ],
+        "later_interval": [
+          [
+            159.86387729644775,
+            0.0,
+            2425.1790161132812,
+            0.0,
+            0.0,
+            532.1598892211914,
+            591.0968837738037,
+            446.44847679138184,
+            896.1066131591797,
+            144.2775559425354
+          ]
+        ],
+        "low_source_activity": [
+          [
+            210.08706092834473,
+            0.0,
+            1996.9174270629883,
+            0.0,
+            0.0,
+            655.3363265991211,
+            152.18142127990723,
+            345.74382400512695,
+            540.4579544067383,
+            54.80860862135887
+          ]
+        ],
+        "high_source_activity": [
+          [
+            92.24505758285522,
+            0.0,
+            3429.316421508789,
+            0.0,
+            0.0,
+            326.23741912841797,
+            802.0620613098145,
+            440.92604637145996,
+            1189.5632400512695,
+            320.3325309753418
+          ]
+        ],
+        "low_destination_popularity": [
+          [
+            136.5048246383667,
+            0.0,
+            2282.9714736938477,
+            0.0,
+            0.0,
+            263.05473709106445,
+            90.29063034057617,
+            220.30801677703857,
+            82.67743444442749,
+            20.640795350074768
+          ]
+        ],
+        "high_destination_popularity": [
+          [
+            165.82730293273926,
+            0.0,
+            3143.2623443603516,
+            0.0,
+            0.0,
+            718.5189399719238,
+            863.952823638916,
+            566.3618564605713,
+            1647.343734741211,
+            354.5003318786621
+          ]
+        ]
+      },
+      "role_reuse": {
+        "seen_to_unseen_entity": {
+          "weighted_cosine": 0.9236456136110028,
+          "comparable_predicates": 1,
+          "left_queries": 643,
+          "right_queries": 4273
+        },
+        "early_to_later_interval": {
+          "weighted_cosine": 0.9878860852388565,
+          "comparable_predicates": 1,
+          "left_queries": 2458,
+          "right_queries": 2458
+        },
+        "source_activity_strata": {
+          "weighted_cosine": 0.9600659730311665,
+          "comparable_predicates": 1,
+          "left_queries": 3977,
+          "right_queries": 939
+        },
+        "destination_popularity_strata": {
+          "weighted_cosine": 0.8821365468587106,
+          "comparable_predicates": 1,
+          "left_queries": 2663,
+          "right_queries": 2253
+        }
+      }
+    },
+    "effective_implementation": "LiFTER",
+    "attention_active_blocks": 0.0,
+    "attention_replacements": 0.0,
+    "trainable_parameters": 262822787
+  },
+  "action_recovery": {
+    "queries": 4916,
+    "action_counts": {
+      "view": 4777,
+      "addtocart": 122,
+      "transaction": 17
+    },
+    "nmi": 0.0,
+    "ari": 0.0,
+    "permutation_matched_accuracy": 0.9717249796582588,
+    "permutation_matched_macro_recall": 0.3333333333333333,
+    "recall_by_action": {
+      "view": 1.0,
+      "addtocart": 0.0,
+      "transaction": 0.0
+    },
+    "confusion_action_by_predicate": [
+      [
+        4777
+      ],
+      [
+        122
+      ],
+      [
+        17
+      ]
+    ]
+  }
+}

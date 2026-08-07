@@ -1,0 +1,2154 @@
+{
+  "dataset": "reddit",
+  "queries_per_seed": 256,
+  "history_per_endpoint": 10,
+  "ratios": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3
+  ],
+  "fixed_k": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "records": [
+    {
+      "seed": 7,
+      "model": "TGN + T-GNNExplainer",
+      "base_ap": 0.7918086091198471,
+      "acc_auc": 0.8736328125000001,
+      "deletion_aufsc": 0.0042399333733224125,
+      "sufficiency_auc": 0.12391072437167167,
+      "necessity_auc": 0.049021306633949276,
+      "mean_selected_events": 2.8561197916666665,
+      "mean_available_events": 14.552734375,
+      "mean_selected_fraction": 0.2065342739224434,
+      "explanation_ms_per_query": 82.14885484994738,
+      "stability_jaccard": 0.5846354166666667,
+      "curves": [
+        {
+          "ratio": 0.05,
+          "k": null,
+          "accuracy": 0.8515625,
+          "sufficiency_probability_delta": 0.16294127702713013,
+          "necessity_probability_delta": 0.02830597013235092,
+          "deletion_fidelity_ap": -0.002232925799569685,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": 0.1,
+          "k": null,
+          "accuracy": 0.86328125,
+          "sufficiency_probability_delta": 0.13897201418876648,
+          "necessity_probability_delta": 0.038521621376276016,
+          "deletion_fidelity_ap": 0.0017033997845368187,
+          "avg_selected_events": 1.826171875,
+          "avg_selected_fraction": 0.1380268633365631
+        },
+        {
+          "ratio": 0.15,
+          "k": null,
+          "accuracy": 0.85546875,
+          "sufficiency_probability_delta": 0.13496150076389313,
+          "necessity_probability_delta": 0.04446689784526825,
+          "deletion_fidelity_ap": 0.004227771367547817,
+          "avg_selected_events": 2.48828125,
+          "avg_selected_fraction": 0.18100252747535706
+        },
+        {
+          "ratio": 0.2,
+          "k": null,
+          "accuracy": 0.876953125,
+          "sufficiency_probability_delta": 0.11438686400651932,
+          "necessity_probability_delta": 0.052146486937999725,
+          "deletion_fidelity_ap": 0.0034794813478238318,
+          "avg_selected_events": 3.220703125,
+          "avg_selected_fraction": 0.23035916686058044
+        },
+        {
+          "ratio": 0.25,
+          "k": null,
+          "accuracy": 0.890625,
+          "sufficiency_probability_delta": 0.10584289580583572,
+          "necessity_probability_delta": 0.06111882999539375,
+          "deletion_fidelity_ap": 0.007557077795414702,
+          "avg_selected_events": 3.904296875,
+          "avg_selected_fraction": 0.2747200131416321
+        },
+        {
+          "ratio": 0.3,
+          "k": null,
+          "accuracy": 0.912109375,
+          "sufficiency_probability_delta": 0.08783941715955734,
+          "necessity_probability_delta": 0.06939942389726639,
+          "deletion_fidelity_ap": 0.010696798942147479,
+          "avg_selected_events": 4.697265625,
+          "avg_selected_fraction": 0.33121663331985474
+        }
+      ],
+      "fixed_k_curves": [
+        {
+          "ratio": null,
+          "k": 1,
+          "accuracy": 0.8515625,
+          "sufficiency_probability_delta": 0.16294127702713013,
+          "necessity_probability_delta": 0.02830597013235092,
+          "deletion_fidelity_ap": -0.002232925799569685,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": null,
+          "k": 2,
+          "accuracy": 0.861328125,
+          "sufficiency_probability_delta": 0.13591845333576202,
+          "necessity_probability_delta": 0.04001341015100479,
+          "deletion_fidelity_ap": 0.0022547363350385874,
+          "avg_selected_events": 2.0,
+          "avg_selected_fraction": 0.16776087880134583
+        },
+        {
+          "ratio": null,
+          "k": 3,
+          "accuracy": 0.875,
+          "sufficiency_probability_delta": 0.12008222937583923,
+          "necessity_probability_delta": 0.050774816423654556,
+          "deletion_fidelity_ap": 0.004154346998212932,
+          "avg_selected_events": 2.990234375,
+          "avg_selected_fraction": 0.24675849080085754
+        },
+        {
+          "ratio": null,
+          "k": 5,
+          "accuracy": 0.91015625,
+          "sufficiency_probability_delta": 0.0863054096698761,
+          "necessity_probability_delta": 0.0696338638663292,
+          "deletion_fidelity_ap": 0.009336950663183519,
+          "avg_selected_events": 4.927734375,
+          "avg_selected_fraction": 0.39205843210220337
+        },
+        {
+          "ratio": null,
+          "k": 10,
+          "accuracy": 0.970703125,
+          "sufficiency_probability_delta": 0.036735355854034424,
+          "necessity_probability_delta": 0.11625760793685913,
+          "deletion_fidelity_ap": 0.013317199431494009,
+          "avg_selected_events": 9.544921875,
+          "avg_selected_fraction": 0.7152924537658691
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "model": "TGN + TempME",
+      "base_ap": 0.7918086091198471,
+      "acc_auc": 0.7208984374999999,
+      "deletion_aufsc": -0.004244556565723323,
+      "sufficiency_auc": 0.24140965640544887,
+      "necessity_auc": 0.02699240911751985,
+      "mean_selected_events": 2.8561197916666665,
+      "mean_available_events": 14.552734375,
+      "mean_selected_fraction": 0.2065342739224434,
+      "explanation_ms_per_query": 0.007883638318162411,
+      "stability_jaccard": 1.0,
+      "curves": [
+        {
+          "ratio": 0.05,
+          "k": null,
+          "accuracy": 0.759765625,
+          "sufficiency_probability_delta": 0.2193557620048523,
+          "necessity_probability_delta": 0.015430847182869911,
+          "deletion_fidelity_ap": -0.0053421654140684005,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": 0.1,
+          "k": null,
+          "accuracy": 0.75390625,
+          "sufficiency_probability_delta": 0.2318597435951233,
+          "necessity_probability_delta": 0.020393628627061844,
+          "deletion_fidelity_ap": -0.004593311997819982,
+          "avg_selected_events": 1.826171875,
+          "avg_selected_fraction": 0.1380268633365631
+        },
+        {
+          "ratio": 0.15,
+          "k": null,
+          "accuracy": 0.70703125,
+          "sufficiency_probability_delta": 0.24804425239562988,
+          "necessity_probability_delta": 0.023847822099924088,
+          "deletion_fidelity_ap": -0.005470899427231779,
+          "avg_selected_events": 2.48828125,
+          "avg_selected_fraction": 0.18100252747535706
+        },
+        {
+          "ratio": 0.2,
+          "k": null,
+          "accuracy": 0.703125,
+          "sufficiency_probability_delta": 0.24624325335025787,
+          "necessity_probability_delta": 0.028507694602012634,
+          "deletion_fidelity_ap": -0.00382261300697162,
+          "avg_selected_events": 3.220703125,
+          "avg_selected_fraction": 0.23035916686058044
+        },
+        {
+          "ratio": 0.25,
+          "k": null,
+          "accuracy": 0.703125,
+          "sufficiency_probability_delta": 0.25054848194122314,
+          "necessity_probability_delta": 0.0346221923828125,
+          "deletion_fidelity_ap": -0.0032593329114624092,
+          "avg_selected_events": 3.904296875,
+          "avg_selected_fraction": 0.2747200131416321
+        },
+        {
+          "ratio": 0.3,
+          "k": null,
+          "accuracy": 0.71484375,
+          "sufficiency_probability_delta": 0.24134933948516846,
+          "necessity_probability_delta": 0.03975056856870651,
+          "deletion_fidelity_ap": -0.002811085556193249,
+          "avg_selected_events": 4.697265625,
+          "avg_selected_fraction": 0.33121663331985474
+        }
+      ],
+      "fixed_k_curves": [
+        {
+          "ratio": null,
+          "k": 1,
+          "accuracy": 0.759765625,
+          "sufficiency_probability_delta": 0.2193557620048523,
+          "necessity_probability_delta": 0.015430847182869911,
+          "deletion_fidelity_ap": -0.0053421654140684005,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": null,
+          "k": 2,
+          "accuracy": 0.7578125,
+          "sufficiency_probability_delta": 0.22814950346946716,
+          "necessity_probability_delta": 0.021702604368329048,
+          "deletion_fidelity_ap": -0.0040499069851092084,
+          "avg_selected_events": 2.0,
+          "avg_selected_fraction": 0.16776087880134583
+        },
+        {
+          "ratio": null,
+          "k": 3,
+          "accuracy": 0.724609375,
+          "sufficiency_probability_delta": 0.23349089920520782,
+          "necessity_probability_delta": 0.029006116092205048,
+          "deletion_fidelity_ap": -0.0018572462548099855,
+          "avg_selected_events": 2.990234375,
+          "avg_selected_fraction": 0.24675849080085754
+        },
+        {
+          "ratio": null,
+          "k": 5,
+          "accuracy": 0.744140625,
+          "sufficiency_probability_delta": 0.2182644158601761,
+          "necessity_probability_delta": 0.044276073575019836,
+          "deletion_fidelity_ap": 8.706537749914034e-05,
+          "avg_selected_events": 4.927734375,
+          "avg_selected_fraction": 0.39205843210220337
+        },
+        {
+          "ratio": null,
+          "k": 10,
+          "accuracy": 0.80859375,
+          "sufficiency_probability_delta": 0.16763801872730255,
+          "necessity_probability_delta": 0.09889328479766846,
+          "deletion_fidelity_ap": 0.03869568920544475,
+          "avg_selected_events": 9.544921875,
+          "avg_selected_fraction": 0.7152924537658691
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "model": "TGIB",
+      "base_ap": 0.7985540241848869,
+      "acc_auc": 0.840625,
+      "deletion_aufsc": 0.007679079633606954,
+      "sufficiency_auc": 0.14311888068914413,
+      "necessity_auc": 0.03709753043949604,
+      "mean_selected_events": 2.8561197916666665,
+      "mean_available_events": 14.552734375,
+      "mean_selected_fraction": 0.2065342739224434,
+      "explanation_ms_per_query": 0.004620062100002542,
+      "stability_jaccard": 0.9388020833333334,
+      "curves": [
+        {
+          "ratio": 0.05,
+          "k": null,
+          "accuracy": 0.791015625,
+          "sufficiency_probability_delta": 0.18318453431129456,
+          "necessity_probability_delta": 0.016915258020162582,
+          "deletion_fidelity_ap": 0.0035349125639380086,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": 0.1,
+          "k": null,
+          "accuracy": 0.814453125,
+          "sufficiency_probability_delta": 0.16635708510875702,
+          "necessity_probability_delta": 0.02823084592819214,
+          "deletion_fidelity_ap": 0.00211838158809019,
+          "avg_selected_events": 1.826171875,
+          "avg_selected_fraction": 0.1380268633365631
+        },
+        {
+          "ratio": 0.15,
+          "k": null,
+          "accuracy": 0.833984375,
+          "sufficiency_probability_delta": 0.14732393622398376,
+          "necessity_probability_delta": 0.0348583348095417,
+          "deletion_fidelity_ap": 0.007783122403018927,
+          "avg_selected_events": 2.48828125,
+          "avg_selected_fraction": 0.18100252747535706
+        },
+        {
+          "ratio": 0.2,
+          "k": null,
+          "accuracy": 0.849609375,
+          "sufficiency_probability_delta": 0.13341431319713593,
+          "necessity_probability_delta": 0.040172964334487915,
+          "deletion_fidelity_ap": 0.006457255328888634,
+          "avg_selected_events": 3.220703125,
+          "avg_selected_fraction": 0.23035916686058044
+        },
+        {
+          "ratio": 0.25,
+          "k": null,
+          "accuracy": 0.869140625,
+          "sufficiency_probability_delta": 0.12082521617412567,
+          "necessity_probability_delta": 0.04702112078666687,
+          "deletion_fidelity_ap": 0.011450686119345521,
+          "avg_selected_events": 3.904296875,
+          "avg_selected_fraction": 0.2747200131416321
+        },
+        {
+          "ratio": 0.3,
+          "k": null,
+          "accuracy": 0.880859375,
+          "sufficiency_probability_delta": 0.11216317117214203,
+          "necessity_probability_delta": 0.05349351465702057,
+          "deletion_fidelity_ap": 0.017636992893445003,
+          "avg_selected_events": 4.697265625,
+          "avg_selected_fraction": 0.33121663331985474
+        }
+      ],
+      "fixed_k_curves": [
+        {
+          "ratio": null,
+          "k": 1,
+          "accuracy": 0.791015625,
+          "sufficiency_probability_delta": 0.18318453431129456,
+          "necessity_probability_delta": 0.016915258020162582,
+          "deletion_fidelity_ap": 0.0035349125639380086,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": null,
+          "k": 2,
+          "accuracy": 0.82421875,
+          "sufficiency_probability_delta": 0.16107523441314697,
+          "necessity_probability_delta": 0.028654754161834717,
+          "deletion_fidelity_ap": 0.0019669981958140292,
+          "avg_selected_events": 2.0,
+          "avg_selected_fraction": 0.16776087880134583
+        },
+        {
+          "ratio": null,
+          "k": 3,
+          "accuracy": 0.837890625,
+          "sufficiency_probability_delta": 0.1379687637090683,
+          "necessity_probability_delta": 0.03659192472696304,
+          "deletion_fidelity_ap": 0.0020682506079344742,
+          "avg_selected_events": 2.990234375,
+          "avg_selected_fraction": 0.24675849080085754
+        },
+        {
+          "ratio": null,
+          "k": 5,
+          "accuracy": 0.88671875,
+          "sufficiency_probability_delta": 0.10577473789453506,
+          "necessity_probability_delta": 0.052073683589696884,
+          "deletion_fidelity_ap": 0.007829026317060617,
+          "avg_selected_events": 4.927734375,
+          "avg_selected_fraction": 0.39205843210220337
+        },
+        {
+          "ratio": null,
+          "k": 10,
+          "accuracy": 0.947265625,
+          "sufficiency_probability_delta": 0.05676371604204178,
+          "necessity_probability_delta": 0.09733318537473679,
+          "deletion_fidelity_ap": 0.0551873545917807,
+          "avg_selected_events": 9.544921875,
+          "avg_selected_fraction": 0.7152924537658691
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "model": "SIG",
+      "base_ap": 0.796389800162366,
+      "acc_auc": 0.9142578124999998,
+      "deletion_aufsc": -0.012706637729158053,
+      "sufficiency_auc": 0.08685045540332793,
+      "necessity_auc": 0.07791306003928185,
+      "mean_selected_events": 2.8561197916666665,
+      "mean_available_events": 14.552734375,
+      "mean_selected_fraction": 0.2065342739224434,
+      "explanation_ms_per_query": 0.00806484604254365,
+      "stability_jaccard": 0.9049479166666667,
+      "curves": [
+        {
+          "ratio": 0.05,
+          "k": null,
+          "accuracy": 0.859375,
+          "sufficiency_probability_delta": 0.1309613287448883,
+          "necessity_probability_delta": 0.04814281314611435,
+          "deletion_fidelity_ap": -0.004608672404752379,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": 0.1,
+          "k": null,
+          "accuracy": 0.890625,
+          "sufficiency_probability_delta": 0.10177934169769287,
+          "necessity_probability_delta": 0.061119116842746735,
+          "deletion_fidelity_ap": -0.011455761038957402,
+          "avg_selected_events": 1.826171875,
+          "avg_selected_fraction": 0.1380268633365631
+        },
+        {
+          "ratio": 0.15,
+          "k": null,
+          "accuracy": 0.912109375,
+          "sufficiency_probability_delta": 0.08672820031642914,
+          "necessity_probability_delta": 0.07257096469402313,
+          "deletion_fidelity_ap": -0.006997194619946523,
+          "avg_selected_events": 2.48828125,
+          "avg_selected_fraction": 0.18100252747535706
+        },
+        {
+          "ratio": 0.2,
+          "k": null,
+          "accuracy": 0.923828125,
+          "sufficiency_probability_delta": 0.07846226543188095,
+          "necessity_probability_delta": 0.08255957812070847,
+          "deletion_fidelity_ap": -0.01290637934162342,
+          "avg_selected_events": 3.220703125,
+          "avg_selected_fraction": 0.23035916686058044
+        },
+        {
+          "ratio": 0.25,
+          "k": null,
+          "accuracy": 0.939453125,
+          "sufficiency_probability_delta": 0.07213183492422104,
+          "necessity_probability_delta": 0.09484443068504333,
+          "deletion_fidelity_ap": -0.020373552461711464,
+          "avg_selected_events": 3.904296875,
+          "avg_selected_fraction": 0.2747200131416321
+        },
+        {
+          "ratio": 0.3,
+          "k": null,
+          "accuracy": 0.951171875,
+          "sufficiency_probability_delta": 0.059339940547943115,
+          "necessity_probability_delta": 0.10879960656166077,
+          "deletion_fidelity_ap": -0.01899192996235055,
+          "avg_selected_events": 4.697265625,
+          "avg_selected_fraction": 0.33121663331985474
+        }
+      ],
+      "fixed_k_curves": [
+        {
+          "ratio": null,
+          "k": 1,
+          "accuracy": 0.859375,
+          "sufficiency_probability_delta": 0.1309613287448883,
+          "necessity_probability_delta": 0.04814281314611435,
+          "deletion_fidelity_ap": -0.004608672404752379,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": null,
+          "k": 2,
+          "accuracy": 0.8984375,
+          "sufficiency_probability_delta": 0.09798737615346909,
+          "necessity_probability_delta": 0.06614185869693756,
+          "deletion_fidelity_ap": -0.010640142920644968,
+          "avg_selected_events": 2.0,
+          "avg_selected_fraction": 0.16776087880134583
+        },
+        {
+          "ratio": null,
+          "k": 3,
+          "accuracy": 0.92578125,
+          "sufficiency_probability_delta": 0.08504991978406906,
+          "necessity_probability_delta": 0.08156834542751312,
+          "deletion_fidelity_ap": -0.0119917545836421,
+          "avg_selected_events": 2.990234375,
+          "avg_selected_fraction": 0.24675849080085754
+        },
+        {
+          "ratio": null,
+          "k": 5,
+          "accuracy": 0.958984375,
+          "sufficiency_probability_delta": 0.0540456585586071,
+          "necessity_probability_delta": 0.10717733204364777,
+          "deletion_fidelity_ap": -0.015566573917214166,
+          "avg_selected_events": 4.927734375,
+          "avg_selected_fraction": 0.39205843210220337
+        },
+        {
+          "ratio": null,
+          "k": 10,
+          "accuracy": 0.982421875,
+          "sufficiency_probability_delta": 0.02052566036581993,
+          "necessity_probability_delta": 0.1499701291322708,
+          "deletion_fidelity_ap": -0.01445669966749552,
+          "avg_selected_events": 9.544921875,
+          "avg_selected_fraction": 0.7152924537658691
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "model": "LiFTER",
+      "base_ap": 0.8227094301799275,
+      "acc_auc": 0.8773437499999999,
+      "deletion_aufsc": 0.002359586704402849,
+      "sufficiency_auc": 0.09554825574159621,
+      "necessity_auc": 0.110174922645092,
+      "mean_selected_events": 2.8561197916666665,
+      "mean_available_events": 14.552734375,
+      "mean_selected_fraction": 0.2065342739224434,
+      "explanation_ms_per_query": 0.023869975848356262,
+      "stability_jaccard": 0.97265625,
+      "curves": [
+        {
+          "ratio": 0.05,
+          "k": null,
+          "accuracy": 0.654296875,
+          "sufficiency_probability_delta": 0.24971893429756165,
+          "necessity_probability_delta": 0.04753692448139191,
+          "deletion_fidelity_ap": 0.0015345180893003851,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": 0.1,
+          "k": null,
+          "accuracy": 0.892578125,
+          "sufficiency_probability_delta": 0.09206713736057281,
+          "necessity_probability_delta": 0.09410426020622253,
+          "deletion_fidelity_ap": -0.0028520207387225938,
+          "avg_selected_events": 1.826171875,
+          "avg_selected_fraction": 0.1380268633365631
+        },
+        {
+          "ratio": 0.15,
+          "k": null,
+          "accuracy": 0.888671875,
+          "sufficiency_probability_delta": 0.08570411056280136,
+          "necessity_probability_delta": 0.10169477015733719,
+          "deletion_fidelity_ap": -0.0008712108455438683,
+          "avg_selected_events": 2.48828125,
+          "avg_selected_fraction": 0.18100252747535706
+        },
+        {
+          "ratio": 0.2,
+          "k": null,
+          "accuracy": 0.90625,
+          "sufficiency_probability_delta": 0.07413046061992645,
+          "necessity_probability_delta": 0.12123597413301468,
+          "deletion_fidelity_ap": -0.0017970067355361774,
+          "avg_selected_events": 3.220703125,
+          "avg_selected_fraction": 0.23035916686058044
+        },
+        {
+          "ratio": 0.25,
+          "k": null,
+          "accuracy": 0.912109375,
+          "sufficiency_probability_delta": 0.06821033358573914,
+          "necessity_probability_delta": 0.13327941298484802,
+          "deletion_fidelity_ap": 0.007000512684547822,
+          "avg_selected_events": 3.904296875,
+          "avg_selected_fraction": 0.2747200131416321
+        },
+        {
+          "ratio": 0.3,
+          "k": null,
+          "accuracy": 0.919921875,
+          "sufficiency_probability_delta": 0.06553953886032104,
+          "necessity_probability_delta": 0.15358346700668335,
+          "deletion_fidelity_ap": 0.019100800225237746,
+          "avg_selected_events": 4.697265625,
+          "avg_selected_fraction": 0.33121663331985474
+        }
+      ],
+      "fixed_k_curves": [
+        {
+          "ratio": null,
+          "k": 1,
+          "accuracy": 0.654296875,
+          "sufficiency_probability_delta": 0.24971893429756165,
+          "necessity_probability_delta": 0.04753692448139191,
+          "deletion_fidelity_ap": 0.0015345180893003851,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": null,
+          "k": 2,
+          "accuracy": 0.896484375,
+          "sufficiency_probability_delta": 0.0827275812625885,
+          "necessity_probability_delta": 0.10071728378534317,
+          "deletion_fidelity_ap": -0.0009252196510221022,
+          "avg_selected_events": 2.0,
+          "avg_selected_fraction": 0.16776087880134583
+        },
+        {
+          "ratio": null,
+          "k": 3,
+          "accuracy": 0.8984375,
+          "sufficiency_probability_delta": 0.07416889071464539,
+          "necessity_probability_delta": 0.12675698101520538,
+          "deletion_fidelity_ap": -0.002000147642603478,
+          "avg_selected_events": 2.990234375,
+          "avg_selected_fraction": 0.24675849080085754
+        },
+        {
+          "ratio": null,
+          "k": 5,
+          "accuracy": 0.93359375,
+          "sufficiency_probability_delta": 0.05891818925738335,
+          "necessity_probability_delta": 0.1680995225906372,
+          "deletion_fidelity_ap": 0.019486542308031596,
+          "avg_selected_events": 4.927734375,
+          "avg_selected_fraction": 0.39205843210220337
+        },
+        {
+          "ratio": null,
+          "k": 10,
+          "accuracy": 0.966796875,
+          "sufficiency_probability_delta": 0.0356932058930397,
+          "necessity_probability_delta": 0.27086448669433594,
+          "deletion_fidelity_ap": 0.10615908979332134,
+          "avg_selected_events": 9.544921875,
+          "avg_selected_fraction": 0.7152924537658691
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "model": "TGN + T-GNNExplainer",
+      "base_ap": 0.7939686423013331,
+      "acc_auc": 0.8908203125,
+      "deletion_aufsc": 0.002946951566364552,
+      "sufficiency_auc": 0.11635720878839492,
+      "necessity_auc": 0.06325132064521312,
+      "mean_selected_events": 2.8561197916666665,
+      "mean_available_events": 14.552734375,
+      "mean_selected_fraction": 0.2065342739224434,
+      "explanation_ms_per_query": 86.32160125853261,
+      "stability_jaccard": 0.6341145833333334,
+      "curves": [
+        {
+          "ratio": 0.05,
+          "k": null,
+          "accuracy": 0.83203125,
+          "sufficiency_probability_delta": 0.17070861160755157,
+          "necessity_probability_delta": 0.03518160805106163,
+          "deletion_fidelity_ap": -0.004283921561180404,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": 0.1,
+          "k": null,
+          "accuracy": 0.873046875,
+          "sufficiency_probability_delta": 0.1394716203212738,
+          "necessity_probability_delta": 0.04782131314277649,
+          "deletion_fidelity_ap": 0.0024361307732901905,
+          "avg_selected_events": 1.826171875,
+          "avg_selected_fraction": 0.1380268633365631
+        },
+        {
+          "ratio": 0.15,
+          "k": null,
+          "accuracy": 0.88671875,
+          "sufficiency_probability_delta": 0.1253747045993805,
+          "necessity_probability_delta": 0.061129771173000336,
+          "deletion_fidelity_ap": 0.00384690032184154,
+          "avg_selected_events": 2.48828125,
+          "avg_selected_fraction": 0.18100252747535706
+        },
+        {
+          "ratio": 0.2,
+          "k": null,
+          "accuracy": 0.89453125,
+          "sufficiency_probability_delta": 0.10619960725307465,
+          "necessity_probability_delta": 0.07031898200511932,
+          "deletion_fidelity_ap": 0.003507986878894087,
+          "avg_selected_events": 3.220703125,
+          "avg_selected_fraction": 0.23035916686058044
+        },
+        {
+          "ratio": 0.25,
+          "k": null,
+          "accuracy": 0.916015625,
+          "sufficiency_probability_delta": 0.0888826847076416,
+          "necessity_probability_delta": 0.07655399292707443,
+          "deletion_fidelity_ap": 0.0037548422442129636,
+          "avg_selected_events": 3.904296875,
+          "avg_selected_fraction": 0.2747200131416321
+        },
+        {
+          "ratio": 0.3,
+          "k": null,
+          "accuracy": 0.935546875,
+          "sufficiency_probability_delta": 0.07300624251365662,
+          "necessity_probability_delta": 0.08568347990512848,
+          "deletion_fidelity_ap": 0.006661716788348371,
+          "avg_selected_events": 4.697265625,
+          "avg_selected_fraction": 0.33121663331985474
+        }
+      ],
+      "fixed_k_curves": [
+        {
+          "ratio": null,
+          "k": 1,
+          "accuracy": 0.83203125,
+          "sufficiency_probability_delta": 0.17070861160755157,
+          "necessity_probability_delta": 0.03518160805106163,
+          "deletion_fidelity_ap": -0.004283921561180404,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": null,
+          "k": 2,
+          "accuracy": 0.875,
+          "sufficiency_probability_delta": 0.13631659746170044,
+          "necessity_probability_delta": 0.049931637942790985,
+          "deletion_fidelity_ap": 0.002694512995991216,
+          "avg_selected_events": 2.0,
+          "avg_selected_fraction": 0.16776087880134583
+        },
+        {
+          "ratio": null,
+          "k": 3,
+          "accuracy": 0.904296875,
+          "sufficiency_probability_delta": 0.10547621548175812,
+          "necessity_probability_delta": 0.06856924295425415,
+          "deletion_fidelity_ap": 0.004331895053631074,
+          "avg_selected_events": 2.990234375,
+          "avg_selected_fraction": 0.24675849080085754
+        },
+        {
+          "ratio": null,
+          "k": 5,
+          "accuracy": 0.931640625,
+          "sufficiency_probability_delta": 0.07315441220998764,
+          "necessity_probability_delta": 0.08605650067329407,
+          "deletion_fidelity_ap": 0.007776704089097364,
+          "avg_selected_events": 4.927734375,
+          "avg_selected_fraction": 0.39205843210220337
+        },
+        {
+          "ratio": null,
+          "k": 10,
+          "accuracy": 0.96484375,
+          "sufficiency_probability_delta": 0.03081601671874523,
+          "necessity_probability_delta": 0.14129382371902466,
+          "deletion_fidelity_ap": 0.024618632196801937,
+          "avg_selected_events": 9.544921875,
+          "avg_selected_fraction": 0.7152924537658691
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "model": "TGN + TempME",
+      "base_ap": 0.7939686423013331,
+      "acc_auc": 0.6773437499999999,
+      "deletion_aufsc": 0.004559047753147459,
+      "sufficiency_auc": 0.28459287285804746,
+      "necessity_auc": 0.03570977300405502,
+      "mean_selected_events": 2.8561197916666665,
+      "mean_available_events": 14.552734375,
+      "mean_selected_fraction": 0.2065342739224434,
+      "explanation_ms_per_query": 0.007610440661665052,
+      "stability_jaccard": 1.0,
+      "curves": [
+        {
+          "ratio": 0.05,
+          "k": null,
+          "accuracy": 0.701171875,
+          "sufficiency_probability_delta": 0.25873035192489624,
+          "necessity_probability_delta": 0.019927576184272766,
+          "deletion_fidelity_ap": -0.0021900872219069445,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": 0.1,
+          "k": null,
+          "accuracy": 0.681640625,
+          "sufficiency_probability_delta": 0.27922582626342773,
+          "necessity_probability_delta": 0.02887757122516632,
+          "deletion_fidelity_ap": 0.002907380256224723,
+          "avg_selected_events": 1.826171875,
+          "avg_selected_fraction": 0.1380268633365631
+        },
+        {
+          "ratio": 0.15,
+          "k": null,
+          "accuracy": 0.671875,
+          "sufficiency_probability_delta": 0.2939395308494568,
+          "necessity_probability_delta": 0.03326065465807915,
+          "deletion_fidelity_ap": 0.0011395552580656387,
+          "avg_selected_events": 2.48828125,
+          "avg_selected_fraction": 0.18100252747535706
+        },
+        {
+          "ratio": 0.2,
+          "k": null,
+          "accuracy": 0.67578125,
+          "sufficiency_probability_delta": 0.29172107577323914,
+          "necessity_probability_delta": 0.03854504972696304,
+          "deletion_fidelity_ap": 0.003789914704387165,
+          "avg_selected_events": 3.220703125,
+          "avg_selected_fraction": 0.23035916686058044
+        },
+        {
+          "ratio": 0.25,
+          "k": null,
+          "accuracy": 0.666015625,
+          "sufficiency_probability_delta": 0.29224857687950134,
+          "necessity_probability_delta": 0.04294946789741516,
+          "deletion_fidelity_ap": 0.009041478274846027,
+          "avg_selected_events": 3.904296875,
+          "avg_selected_fraction": 0.2747200131416321
+        },
+        {
+          "ratio": 0.3,
+          "k": null,
+          "accuracy": 0.681640625,
+          "sufficiency_probability_delta": 0.2729283571243286,
+          "necessity_probability_delta": 0.04990466684103012,
+          "deletion_fidelity_ap": 0.014023907766334442,
+          "avg_selected_events": 4.697265625,
+          "avg_selected_fraction": 0.33121663331985474
+        }
+      ],
+      "fixed_k_curves": [
+        {
+          "ratio": null,
+          "k": 1,
+          "accuracy": 0.701171875,
+          "sufficiency_probability_delta": 0.25873035192489624,
+          "necessity_probability_delta": 0.019927576184272766,
+          "deletion_fidelity_ap": -0.0021900872219069445,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": null,
+          "k": 2,
+          "accuracy": 0.689453125,
+          "sufficiency_probability_delta": 0.27465134859085083,
+          "necessity_probability_delta": 0.03130774572491646,
+          "deletion_fidelity_ap": 0.002891322507698968,
+          "avg_selected_events": 2.0,
+          "avg_selected_fraction": 0.16776087880134583
+        },
+        {
+          "ratio": null,
+          "k": 3,
+          "accuracy": 0.685546875,
+          "sufficiency_probability_delta": 0.27978867292404175,
+          "necessity_probability_delta": 0.03895532339811325,
+          "deletion_fidelity_ap": 0.004135499835531853,
+          "avg_selected_events": 2.990234375,
+          "avg_selected_fraction": 0.24675849080085754
+        },
+        {
+          "ratio": null,
+          "k": 5,
+          "accuracy": 0.703125,
+          "sufficiency_probability_delta": 0.2569754719734192,
+          "necessity_probability_delta": 0.05000842362642288,
+          "deletion_fidelity_ap": 0.01013629436415564,
+          "avg_selected_events": 4.927734375,
+          "avg_selected_fraction": 0.39205843210220337
+        },
+        {
+          "ratio": null,
+          "k": 10,
+          "accuracy": 0.791015625,
+          "sufficiency_probability_delta": 0.18524126708507538,
+          "necessity_probability_delta": 0.1021440401673317,
+          "deletion_fidelity_ap": 0.053356829501573166,
+          "avg_selected_events": 9.544921875,
+          "avg_selected_fraction": 0.7152924537658691
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "model": "TGIB",
+      "base_ap": 0.7786180061029243,
+      "acc_auc": 0.8529296875,
+      "deletion_aufsc": 0.01505142104264555,
+      "sufficiency_auc": 0.13051048219203948,
+      "necessity_auc": 0.03827783279120922,
+      "mean_selected_events": 2.8561197916666665,
+      "mean_available_events": 14.552734375,
+      "mean_selected_fraction": 0.2065342739224434,
+      "explanation_ms_per_query": 0.004604164132615551,
+      "stability_jaccard": 0.94921875,
+      "curves": [
+        {
+          "ratio": 0.05,
+          "k": null,
+          "accuracy": 0.82421875,
+          "sufficiency_probability_delta": 0.15731661021709442,
+          "necessity_probability_delta": 0.02071787416934967,
+          "deletion_fidelity_ap": 0.0018372121224382587,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": 0.1,
+          "k": null,
+          "accuracy": 0.83203125,
+          "sufficiency_probability_delta": 0.14308032393455505,
+          "necessity_probability_delta": 0.029596904292702675,
+          "deletion_fidelity_ap": 0.005566083961460855,
+          "avg_selected_events": 1.826171875,
+          "avg_selected_fraction": 0.1380268633365631
+        },
+        {
+          "ratio": 0.15,
+          "k": null,
+          "accuracy": 0.845703125,
+          "sufficiency_probability_delta": 0.13614168763160706,
+          "necessity_probability_delta": 0.035234756767749786,
+          "deletion_fidelity_ap": 0.010329542900553879,
+          "avg_selected_events": 2.48828125,
+          "avg_selected_fraction": 0.18100252747535706
+        },
+        {
+          "ratio": 0.2,
+          "k": null,
+          "accuracy": 0.861328125,
+          "sufficiency_probability_delta": 0.12415029108524323,
+          "necessity_probability_delta": 0.04137696325778961,
+          "deletion_fidelity_ap": 0.01765624234161245,
+          "avg_selected_events": 3.220703125,
+          "avg_selected_fraction": 0.23035916686058044
+        },
+        {
+          "ratio": 0.25,
+          "k": null,
+          "accuracy": 0.8671875,
+          "sufficiency_probability_delta": 0.11867160350084305,
+          "necessity_probability_delta": 0.04705871269106865,
+          "deletion_fidelity_ap": 0.024807021983854316,
+          "avg_selected_events": 3.904296875,
+          "avg_selected_fraction": 0.2747200131416321
+        },
+        {
+          "ratio": 0.3,
+          "k": null,
+          "accuracy": 0.892578125,
+          "sufficiency_probability_delta": 0.10370039939880371,
+          "necessity_probability_delta": 0.055525779724121094,
+          "deletion_fidelity_ap": 0.03195921592905426,
+          "avg_selected_events": 4.697265625,
+          "avg_selected_fraction": 0.33121663331985474
+        }
+      ],
+      "fixed_k_curves": [
+        {
+          "ratio": null,
+          "k": 1,
+          "accuracy": 0.82421875,
+          "sufficiency_probability_delta": 0.15731661021709442,
+          "necessity_probability_delta": 0.02071787416934967,
+          "deletion_fidelity_ap": 0.0018372121224382587,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": null,
+          "k": 2,
+          "accuracy": 0.83984375,
+          "sufficiency_probability_delta": 0.1406106948852539,
+          "necessity_probability_delta": 0.03260481730103493,
+          "deletion_fidelity_ap": 0.005569562982270293,
+          "avg_selected_events": 2.0,
+          "avg_selected_fraction": 0.16776087880134583
+        },
+        {
+          "ratio": null,
+          "k": 3,
+          "accuracy": 0.861328125,
+          "sufficiency_probability_delta": 0.12682485580444336,
+          "necessity_probability_delta": 0.04043059051036835,
+          "deletion_fidelity_ap": 0.014157737034472873,
+          "avg_selected_events": 2.990234375,
+          "avg_selected_fraction": 0.24675849080085754
+        },
+        {
+          "ratio": null,
+          "k": 5,
+          "accuracy": 0.892578125,
+          "sufficiency_probability_delta": 0.10174146294593811,
+          "necessity_probability_delta": 0.056234829127788544,
+          "deletion_fidelity_ap": 0.02613826784473261,
+          "avg_selected_events": 4.927734375,
+          "avg_selected_fraction": 0.39205843210220337
+        },
+        {
+          "ratio": null,
+          "k": 10,
+          "accuracy": 0.951171875,
+          "sufficiency_probability_delta": 0.05769462138414383,
+          "necessity_probability_delta": 0.09786785393953323,
+          "deletion_fidelity_ap": 0.06894369811694256,
+          "avg_selected_events": 9.544921875,
+          "avg_selected_fraction": 0.7152924537658691
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "model": "SIG",
+      "base_ap": 0.7932302859298257,
+      "acc_auc": 0.9087890624999999,
+      "deletion_aufsc": -0.01370401988501374,
+      "sufficiency_auc": 0.09399134889245034,
+      "necessity_auc": 0.08649658001959323,
+      "mean_selected_events": 2.8561197916666665,
+      "mean_available_events": 14.552734375,
+      "mean_selected_fraction": 0.2065342739224434,
+      "explanation_ms_per_query": 0.0080094687291421,
+      "stability_jaccard": 0.89453125,
+      "curves": [
+        {
+          "ratio": 0.05,
+          "k": null,
+          "accuracy": 0.861328125,
+          "sufficiency_probability_delta": 0.13825374841690063,
+          "necessity_probability_delta": 0.05409467592835426,
+          "deletion_fidelity_ap": -0.014208985014609765,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": 0.1,
+          "k": null,
+          "accuracy": 0.896484375,
+          "sufficiency_probability_delta": 0.11247493326663971,
+          "necessity_probability_delta": 0.06881241500377655,
+          "deletion_fidelity_ap": -0.01198866384099384,
+          "avg_selected_events": 1.826171875,
+          "avg_selected_fraction": 0.1380268633365631
+        },
+        {
+          "ratio": 0.15,
+          "k": null,
+          "accuracy": 0.900390625,
+          "sufficiency_probability_delta": 0.0944451242685318,
+          "necessity_probability_delta": 0.07979747653007507,
+          "deletion_fidelity_ap": -0.012389183416302019,
+          "avg_selected_events": 2.48828125,
+          "avg_selected_fraction": 0.18100252747535706
+        },
+        {
+          "ratio": 0.2,
+          "k": null,
+          "accuracy": 0.91015625,
+          "sufficiency_probability_delta": 0.08809695392847061,
+          "necessity_probability_delta": 0.0934499204158783,
+          "deletion_fidelity_ap": -0.015504276496054237,
+          "avg_selected_events": 3.220703125,
+          "avg_selected_fraction": 0.23035916686058044
+        },
+        {
+          "ratio": 0.25,
+          "k": null,
+          "accuracy": 0.931640625,
+          "sufficiency_probability_delta": 0.07471689581871033,
+          "necessity_probability_delta": 0.10434074699878693,
+          "deletion_fidelity_ap": -0.01440331923903393,
+          "avg_selected_events": 3.904296875,
+          "avg_selected_fraction": 0.2747200131416321
+        },
+        {
+          "ratio": 0.3,
+          "k": null,
+          "accuracy": 0.94921875,
+          "sufficiency_probability_delta": 0.0621919259428978,
+          "necessity_probability_delta": 0.11807000637054443,
+          "deletion_fidelity_ap": -0.014260327850759591,
+          "avg_selected_events": 4.697265625,
+          "avg_selected_fraction": 0.33121663331985474
+        }
+      ],
+      "fixed_k_curves": [
+        {
+          "ratio": null,
+          "k": 1,
+          "accuracy": 0.861328125,
+          "sufficiency_probability_delta": 0.13825374841690063,
+          "necessity_probability_delta": 0.05409467592835426,
+          "deletion_fidelity_ap": -0.014208985014609765,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": null,
+          "k": 2,
+          "accuracy": 0.89453125,
+          "sufficiency_probability_delta": 0.11034654080867767,
+          "necessity_probability_delta": 0.07009977847337723,
+          "deletion_fidelity_ap": -0.011511091413619834,
+          "avg_selected_events": 2.0,
+          "avg_selected_fraction": 0.16776087880134583
+        },
+        {
+          "ratio": null,
+          "k": 3,
+          "accuracy": 0.912109375,
+          "sufficiency_probability_delta": 0.09192007035017014,
+          "necessity_probability_delta": 0.08995291590690613,
+          "deletion_fidelity_ap": -0.014543031180138777,
+          "avg_selected_events": 2.990234375,
+          "avg_selected_fraction": 0.24675849080085754
+        },
+        {
+          "ratio": null,
+          "k": 5,
+          "accuracy": 0.9453125,
+          "sufficiency_probability_delta": 0.05862656235694885,
+          "necessity_probability_delta": 0.11633403599262238,
+          "deletion_fidelity_ap": -0.01082903360609555,
+          "avg_selected_events": 4.927734375,
+          "avg_selected_fraction": 0.39205843210220337
+        },
+        {
+          "ratio": null,
+          "k": 10,
+          "accuracy": 0.982421875,
+          "sufficiency_probability_delta": 0.023921173065900803,
+          "necessity_probability_delta": 0.15067614614963531,
+          "deletion_fidelity_ap": -0.009922658851038046,
+          "avg_selected_events": 9.544921875,
+          "avg_selected_fraction": 0.7152924537658691
+        }
+      ]
+    },
+    {
+      "seed": 17,
+      "model": "LiFTER",
+      "base_ap": 0.8304632101294509,
+      "acc_auc": 0.875390625,
+      "deletion_aufsc": 0.00724925702598984,
+      "sufficiency_auc": 0.10000924468040465,
+      "necessity_auc": 0.11644536405801773,
+      "mean_selected_events": 2.8561197916666665,
+      "mean_available_events": 14.552734375,
+      "mean_selected_fraction": 0.2065342739224434,
+      "explanation_ms_per_query": 0.024054017558228225,
+      "stability_jaccard": 0.9674479166666667,
+      "curves": [
+        {
+          "ratio": 0.05,
+          "k": null,
+          "accuracy": 0.6484375,
+          "sufficiency_probability_delta": 0.24988409876823425,
+          "necessity_probability_delta": 0.04960060119628906,
+          "deletion_fidelity_ap": -0.0013567031254861917,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": 0.1,
+          "k": null,
+          "accuracy": 0.8828125,
+          "sufficiency_probability_delta": 0.10214301943778992,
+          "necessity_probability_delta": 0.1010342389345169,
+          "deletion_fidelity_ap": 0.0028875306460447447,
+          "avg_selected_events": 1.826171875,
+          "avg_selected_fraction": 0.1380268633365631
+        },
+        {
+          "ratio": 0.15,
+          "k": null,
+          "accuracy": 0.892578125,
+          "sufficiency_probability_delta": 0.0887756198644638,
+          "necessity_probability_delta": 0.10982975363731384,
+          "deletion_fidelity_ap": 0.0016159248589271424,
+          "avg_selected_events": 2.48828125,
+          "avg_selected_fraction": 0.18100252747535706
+        },
+        {
+          "ratio": 0.2,
+          "k": null,
+          "accuracy": 0.90625,
+          "sufficiency_probability_delta": 0.07699893414974213,
+          "necessity_probability_delta": 0.1242828220129013,
+          "deletion_fidelity_ap": 0.005327609593466454,
+          "avg_selected_events": 3.220703125,
+          "avg_selected_fraction": 0.23035916686058044
+        },
+        {
+          "ratio": 0.25,
+          "k": null,
+          "accuracy": 0.9140625,
+          "sufficiency_probability_delta": 0.07338152825832367,
+          "necessity_probability_delta": 0.14204609394073486,
+          "deletion_fidelity_ap": 0.014273476044773581,
+          "avg_selected_events": 3.904296875,
+          "avg_selected_fraction": 0.2747200131416321
+        },
+        {
+          "ratio": 0.3,
+          "k": null,
+          "accuracy": 0.9140625,
+          "sufficiency_probability_delta": 0.06761014461517334,
+          "necessity_probability_delta": 0.1604672223329544,
+          "deletion_fidelity_ap": 0.025640191098960763,
+          "avg_selected_events": 4.697265625,
+          "avg_selected_fraction": 0.33121663331985474
+        }
+      ],
+      "fixed_k_curves": [
+        {
+          "ratio": null,
+          "k": 1,
+          "accuracy": 0.6484375,
+          "sufficiency_probability_delta": 0.24988409876823425,
+          "necessity_probability_delta": 0.04960060119628906,
+          "deletion_fidelity_ap": -0.0013567031254861917,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": null,
+          "k": 2,
+          "accuracy": 0.88671875,
+          "sufficiency_probability_delta": 0.09246604889631271,
+          "necessity_probability_delta": 0.10827761888504028,
+          "deletion_fidelity_ap": 0.004314931969747415,
+          "avg_selected_events": 2.0,
+          "avg_selected_fraction": 0.16776087880134583
+        },
+        {
+          "ratio": null,
+          "k": 3,
+          "accuracy": 0.916015625,
+          "sufficiency_probability_delta": 0.06897934526205063,
+          "necessity_probability_delta": 0.13263443112373352,
+          "deletion_fidelity_ap": 0.004335710774160173,
+          "avg_selected_events": 2.990234375,
+          "avg_selected_fraction": 0.24675849080085754
+        },
+        {
+          "ratio": null,
+          "k": 5,
+          "accuracy": 0.93359375,
+          "sufficiency_probability_delta": 0.060375019907951355,
+          "necessity_probability_delta": 0.17501243948936462,
+          "deletion_fidelity_ap": 0.02547025435475525,
+          "avg_selected_events": 4.927734375,
+          "avg_selected_fraction": 0.39205843210220337
+        },
+        {
+          "ratio": null,
+          "k": 10,
+          "accuracy": 0.95703125,
+          "sufficiency_probability_delta": 0.036911286413669586,
+          "necessity_probability_delta": 0.27174636721611023,
+          "deletion_fidelity_ap": 0.1104035234263685,
+          "avg_selected_events": 9.544921875,
+          "avg_selected_fraction": 0.7152924537658691
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "model": "TGN + T-GNNExplainer",
+      "base_ap": 0.78476747561999,
+      "acc_auc": 0.8484375,
+      "deletion_aufsc": 0.0010073833611530243,
+      "sufficiency_auc": 0.13427320048213004,
+      "necessity_auc": 0.060606458783149714,
+      "mean_selected_events": 2.8561197916666665,
+      "mean_available_events": 14.552734375,
+      "mean_selected_fraction": 0.2065342739224434,
+      "explanation_ms_per_query": 80.6858399810153,
+      "stability_jaccard": 0.625,
+      "curves": [
+        {
+          "ratio": 0.05,
+          "k": null,
+          "accuracy": 0.806640625,
+          "sufficiency_probability_delta": 0.17365068197250366,
+          "necessity_probability_delta": 0.03570850193500519,
+          "deletion_fidelity_ap": -0.0035002860213658726,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": 0.1,
+          "k": null,
+          "accuracy": 0.814453125,
+          "sufficiency_probability_delta": 0.15704263746738434,
+          "necessity_probability_delta": 0.04657705873250961,
+          "deletion_fidelity_ap": -0.0037586688120220257,
+          "avg_selected_events": 1.826171875,
+          "avg_selected_fraction": 0.1380268633365631
+        },
+        {
+          "ratio": 0.15,
+          "k": null,
+          "accuracy": 0.83984375,
+          "sufficiency_probability_delta": 0.14457514882087708,
+          "necessity_probability_delta": 0.055749304592609406,
+          "deletion_fidelity_ap": -0.0011250492639638399,
+          "avg_selected_events": 2.48828125,
+          "avg_selected_fraction": 0.18100252747535706
+        },
+        {
+          "ratio": 0.2,
+          "k": null,
+          "accuracy": 0.857421875,
+          "sufficiency_probability_delta": 0.125957190990448,
+          "necessity_probability_delta": 0.06554888933897018,
+          "deletion_fidelity_ap": 0.002071165810888953,
+          "avg_selected_events": 3.220703125,
+          "avg_selected_fraction": 0.23035916686058044
+        },
+        {
+          "ratio": 0.25,
+          "k": null,
+          "accuracy": 0.87890625,
+          "sufficiency_probability_delta": 0.10961369425058365,
+          "necessity_probability_delta": 0.07432381808757782,
+          "deletion_fidelity_ap": 0.004818629420418108,
+          "avg_selected_events": 3.904296875,
+          "avg_selected_fraction": 0.2747200131416321
+        },
+        {
+          "ratio": 0.3,
+          "k": null,
+          "accuracy": 0.896484375,
+          "sufficiency_probability_delta": 0.09470397979021072,
+          "necessity_probability_delta": 0.08595794439315796,
+          "deletion_fidelity_ap": 0.00956196532225373,
+          "avg_selected_events": 4.697265625,
+          "avg_selected_fraction": 0.33121663331985474
+        }
+      ],
+      "fixed_k_curves": [
+        {
+          "ratio": null,
+          "k": 1,
+          "accuracy": 0.806640625,
+          "sufficiency_probability_delta": 0.17365068197250366,
+          "necessity_probability_delta": 0.03570850193500519,
+          "deletion_fidelity_ap": -0.0035002860213658726,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": null,
+          "k": 2,
+          "accuracy": 0.8203125,
+          "sufficiency_probability_delta": 0.15419301390647888,
+          "necessity_probability_delta": 0.049256063997745514,
+          "deletion_fidelity_ap": -0.0031192900173468985,
+          "avg_selected_events": 2.0,
+          "avg_selected_fraction": 0.16776087880134583
+        },
+        {
+          "ratio": null,
+          "k": 3,
+          "accuracy": 0.857421875,
+          "sufficiency_probability_delta": 0.1310696005821228,
+          "necessity_probability_delta": 0.060751523822546005,
+          "deletion_fidelity_ap": 0.001340910682625096,
+          "avg_selected_events": 2.990234375,
+          "avg_selected_fraction": 0.24675849080085754
+        },
+        {
+          "ratio": null,
+          "k": 5,
+          "accuracy": 0.90234375,
+          "sufficiency_probability_delta": 0.08893368393182755,
+          "necessity_probability_delta": 0.08319734036922455,
+          "deletion_fidelity_ap": 0.006789219398540158,
+          "avg_selected_events": 4.927734375,
+          "avg_selected_fraction": 0.39205843210220337
+        },
+        {
+          "ratio": null,
+          "k": 10,
+          "accuracy": 0.9609375,
+          "sufficiency_probability_delta": 0.03174939006567001,
+          "necessity_probability_delta": 0.14623787999153137,
+          "deletion_fidelity_ap": 0.04171633786093709,
+          "avg_selected_events": 9.544921875,
+          "avg_selected_fraction": 0.7152924537658691
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "model": "TGN + TempME",
+      "base_ap": 0.78476747561999,
+      "acc_auc": 0.7023437499999999,
+      "deletion_aufsc": -0.004627569663443133,
+      "sufficiency_auc": 0.265461653470993,
+      "necessity_auc": 0.03548961281776428,
+      "mean_selected_events": 2.8561197916666665,
+      "mean_available_events": 14.552734375,
+      "mean_selected_fraction": 0.2065342739224434,
+      "explanation_ms_per_query": 0.005331090505933389,
+      "stability_jaccard": 1.0,
+      "curves": [
+        {
+          "ratio": 0.05,
+          "k": null,
+          "accuracy": 0.732421875,
+          "sufficiency_probability_delta": 0.24074402451515198,
+          "necessity_probability_delta": 0.02104860171675682,
+          "deletion_fidelity_ap": -0.006647898667012542,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": 0.1,
+          "k": null,
+          "accuracy": 0.71875,
+          "sufficiency_probability_delta": 0.2570362985134125,
+          "necessity_probability_delta": 0.02675284817814827,
+          "deletion_fidelity_ap": -0.005312945532682467,
+          "avg_selected_events": 1.826171875,
+          "avg_selected_fraction": 0.1380268633365631
+        },
+        {
+          "ratio": 0.15,
+          "k": null,
+          "accuracy": 0.6953125,
+          "sufficiency_probability_delta": 0.2724769711494446,
+          "necessity_probability_delta": 0.03017285093665123,
+          "deletion_fidelity_ap": -0.007947452433805235,
+          "avg_selected_events": 2.48828125,
+          "avg_selected_fraction": 0.18100252747535706
+        },
+        {
+          "ratio": 0.2,
+          "k": null,
+          "accuracy": 0.69140625,
+          "sufficiency_probability_delta": 0.27485278248786926,
+          "necessity_probability_delta": 0.0390804149210453,
+          "deletion_fidelity_ap": -0.005147756115509883,
+          "avg_selected_events": 3.220703125,
+          "avg_selected_fraction": 0.23035916686058044
+        },
+        {
+          "ratio": 0.25,
+          "k": null,
+          "accuracy": 0.689453125,
+          "sufficiency_probability_delta": 0.27395951747894287,
+          "necessity_probability_delta": 0.04486782103776932,
+          "deletion_fidelity_ap": -0.0006487270683316337,
+          "avg_selected_events": 3.904296875,
+          "avg_selected_fraction": 0.2747200131416321
+        },
+        {
+          "ratio": 0.3,
+          "k": null,
+          "accuracy": 0.701171875,
+          "sufficiency_probability_delta": 0.25722137093544006,
+          "necessity_probability_delta": 0.05209965631365776,
+          "deletion_fidelity_ap": -0.0015140356667603383,
+          "avg_selected_events": 4.697265625,
+          "avg_selected_fraction": 0.33121663331985474
+        }
+      ],
+      "fixed_k_curves": [
+        {
+          "ratio": null,
+          "k": 1,
+          "accuracy": 0.732421875,
+          "sufficiency_probability_delta": 0.24074402451515198,
+          "necessity_probability_delta": 0.02104860171675682,
+          "deletion_fidelity_ap": -0.006647898667012542,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": null,
+          "k": 2,
+          "accuracy": 0.724609375,
+          "sufficiency_probability_delta": 0.25391632318496704,
+          "necessity_probability_delta": 0.02975776419043541,
+          "deletion_fidelity_ap": -0.004499638746692791,
+          "avg_selected_events": 2.0,
+          "avg_selected_fraction": 0.16776087880134583
+        },
+        {
+          "ratio": null,
+          "k": 3,
+          "accuracy": 0.703125,
+          "sufficiency_probability_delta": 0.26266923546791077,
+          "necessity_probability_delta": 0.03851350396871567,
+          "deletion_fidelity_ap": -0.002674834625519651,
+          "avg_selected_events": 2.990234375,
+          "avg_selected_fraction": 0.24675849080085754
+        },
+        {
+          "ratio": null,
+          "k": 5,
+          "accuracy": 0.71875,
+          "sufficiency_probability_delta": 0.24111860990524292,
+          "necessity_probability_delta": 0.05365261435508728,
+          "deletion_fidelity_ap": 0.00012621607122398348,
+          "avg_selected_events": 4.927734375,
+          "avg_selected_fraction": 0.39205843210220337
+        },
+        {
+          "ratio": null,
+          "k": 10,
+          "accuracy": 0.78125,
+          "sufficiency_probability_delta": 0.1806422472000122,
+          "necessity_probability_delta": 0.11706081032752991,
+          "deletion_fidelity_ap": 0.03636882439193867,
+          "avg_selected_events": 9.544921875,
+          "avg_selected_fraction": 0.7152924537658691
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "model": "TGIB",
+      "base_ap": 0.8158398216422412,
+      "acc_auc": 0.8537109374999999,
+      "deletion_aufsc": 0.004872778946758459,
+      "sufficiency_auc": 0.13802531510591506,
+      "necessity_auc": 0.03584743253886699,
+      "mean_selected_events": 2.8561197916666665,
+      "mean_available_events": 14.552734375,
+      "mean_selected_fraction": 0.2065342739224434,
+      "explanation_ms_per_query": 0.004625337169272825,
+      "stability_jaccard": 0.9153645833333334,
+      "curves": [
+        {
+          "ratio": 0.05,
+          "k": null,
+          "accuracy": 0.861328125,
+          "sufficiency_probability_delta": 0.13349959254264832,
+          "necessity_probability_delta": 0.016934562474489212,
+          "deletion_fidelity_ap": 0.0020015020944625928,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": 0.1,
+          "k": null,
+          "accuracy": 0.841796875,
+          "sufficiency_probability_delta": 0.14695867896080017,
+          "necessity_probability_delta": 0.027237385511398315,
+          "deletion_fidelity_ap": 0.004216491833822111,
+          "avg_selected_events": 1.826171875,
+          "avg_selected_fraction": 0.1380268633365631
+        },
+        {
+          "ratio": 0.15,
+          "k": null,
+          "accuracy": 0.845703125,
+          "sufficiency_probability_delta": 0.14579346776008606,
+          "necessity_probability_delta": 0.03307902440428734,
+          "deletion_fidelity_ap": 0.0034949502643633057,
+          "avg_selected_events": 2.48828125,
+          "avg_selected_fraction": 0.18100252747535706
+        },
+        {
+          "ratio": 0.2,
+          "k": null,
+          "accuracy": 0.861328125,
+          "sufficiency_probability_delta": 0.13647714257240295,
+          "necessity_probability_delta": 0.038697220385074615,
+          "deletion_fidelity_ap": 0.0036505583810151343,
+          "avg_selected_events": 3.220703125,
+          "avg_selected_fraction": 0.23035916686058044
+        },
+        {
+          "ratio": 0.25,
+          "k": null,
+          "accuracy": 0.857421875,
+          "sufficiency_probability_delta": 0.1321415901184082,
+          "necessity_probability_delta": 0.04612702131271362,
+          "deletion_fidelity_ap": 0.007231519503585804,
+          "avg_selected_events": 3.904296875,
+          "avg_selected_fraction": 0.2747200131416321
+        },
+        {
+          "ratio": 0.3,
+          "k": null,
+          "accuracy": 0.86328125,
+          "sufficiency_probability_delta": 0.1240117996931076,
+          "necessity_probability_delta": 0.05125845968723297,
+          "deletion_fidelity_ap": 0.0095392474075493,
+          "avg_selected_events": 4.697265625,
+          "avg_selected_fraction": 0.33121663331985474
+        }
+      ],
+      "fixed_k_curves": [
+        {
+          "ratio": null,
+          "k": 1,
+          "accuracy": 0.861328125,
+          "sufficiency_probability_delta": 0.13349959254264832,
+          "necessity_probability_delta": 0.016934562474489212,
+          "deletion_fidelity_ap": 0.0020015020944625928,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": null,
+          "k": 2,
+          "accuracy": 0.837890625,
+          "sufficiency_probability_delta": 0.14581316709518433,
+          "necessity_probability_delta": 0.029971584677696228,
+          "deletion_fidelity_ap": 0.004082855324508805,
+          "avg_selected_events": 2.0,
+          "avg_selected_fraction": 0.16776087880134583
+        },
+        {
+          "ratio": null,
+          "k": 3,
+          "accuracy": 0.86328125,
+          "sufficiency_probability_delta": 0.13400514423847198,
+          "necessity_probability_delta": 0.039612479507923126,
+          "deletion_fidelity_ap": 0.005804913702915804,
+          "avg_selected_events": 2.990234375,
+          "avg_selected_fraction": 0.24675849080085754
+        },
+        {
+          "ratio": null,
+          "k": 5,
+          "accuracy": 0.876953125,
+          "sufficiency_probability_delta": 0.11462078243494034,
+          "necessity_probability_delta": 0.05289152264595032,
+          "deletion_fidelity_ap": 0.013340627058065713,
+          "avg_selected_events": 4.927734375,
+          "avg_selected_fraction": 0.39205843210220337
+        },
+        {
+          "ratio": null,
+          "k": 10,
+          "accuracy": 0.921875,
+          "sufficiency_probability_delta": 0.0733204334974289,
+          "necessity_probability_delta": 0.08938560634851456,
+          "deletion_fidelity_ap": 0.04794973323378626,
+          "avg_selected_events": 9.544921875,
+          "avg_selected_fraction": 0.7152924537658691
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "model": "SIG",
+      "base_ap": 0.7847586338024046,
+      "acc_auc": 0.9140625,
+      "deletion_aufsc": -0.027732842142239665,
+      "sufficiency_auc": 0.09022615030407906,
+      "necessity_auc": 0.0702440656721592,
+      "mean_selected_events": 2.8561197916666665,
+      "mean_available_events": 14.552734375,
+      "mean_selected_fraction": 0.2065342739224434,
+      "explanation_ms_per_query": 0.008031511242734268,
+      "stability_jaccard": 0.90234375,
+      "curves": [
+        {
+          "ratio": 0.05,
+          "k": null,
+          "accuracy": 0.87109375,
+          "sufficiency_probability_delta": 0.13279011845588684,
+          "necessity_probability_delta": 0.045163556933403015,
+          "deletion_fidelity_ap": -0.02663061648740772,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": 0.1,
+          "k": null,
+          "accuracy": 0.892578125,
+          "sufficiency_probability_delta": 0.11202265322208405,
+          "necessity_probability_delta": 0.057396069169044495,
+          "deletion_fidelity_ap": -0.02792835081425571,
+          "avg_selected_events": 1.826171875,
+          "avg_selected_fraction": 0.1380268633365631
+        },
+        {
+          "ratio": 0.15,
+          "k": null,
+          "accuracy": 0.919921875,
+          "sufficiency_probability_delta": 0.09037087857723236,
+          "necessity_probability_delta": 0.06549049913883209,
+          "deletion_fidelity_ap": -0.025521280187900675,
+          "avg_selected_events": 2.48828125,
+          "avg_selected_fraction": 0.18100252747535706
+        },
+        {
+          "ratio": 0.2,
+          "k": null,
+          "accuracy": 0.92578125,
+          "sufficiency_probability_delta": 0.07752558588981628,
+          "necessity_probability_delta": 0.07546241581439972,
+          "deletion_fidelity_ap": -0.026154589662582994,
+          "avg_selected_events": 3.220703125,
+          "avg_selected_fraction": 0.23035916686058044
+        },
+        {
+          "ratio": 0.25,
+          "k": null,
+          "accuracy": 0.9296875,
+          "sufficiency_probability_delta": 0.07320577651262283,
+          "necessity_probability_delta": 0.08319351077079773,
+          "deletion_fidelity_ap": -0.0293044149616285,
+          "avg_selected_events": 3.904296875,
+          "avg_selected_fraction": 0.2747200131416321
+        },
+        {
+          "ratio": 0.3,
+          "k": null,
+          "accuracy": 0.93359375,
+          "sufficiency_probability_delta": 0.06322159618139267,
+          "necessity_probability_delta": 0.09419211000204086,
+          "deletion_fidelity_ap": -0.03288053368225319,
+          "avg_selected_events": 4.697265625,
+          "avg_selected_fraction": 0.33121663331985474
+        }
+      ],
+      "fixed_k_curves": [
+        {
+          "ratio": null,
+          "k": 1,
+          "accuracy": 0.87109375,
+          "sufficiency_probability_delta": 0.13279011845588684,
+          "necessity_probability_delta": 0.045163556933403015,
+          "deletion_fidelity_ap": -0.02663061648740772,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": null,
+          "k": 2,
+          "accuracy": 0.884765625,
+          "sufficiency_probability_delta": 0.11128263175487518,
+          "necessity_probability_delta": 0.06020696461200714,
+          "deletion_fidelity_ap": -0.02796979958140622,
+          "avg_selected_events": 2.0,
+          "avg_selected_fraction": 0.16776087880134583
+        },
+        {
+          "ratio": null,
+          "k": 3,
+          "accuracy": 0.927734375,
+          "sufficiency_probability_delta": 0.08208613097667694,
+          "necessity_probability_delta": 0.07009612023830414,
+          "deletion_fidelity_ap": -0.0275871625981019,
+          "avg_selected_events": 2.990234375,
+          "avg_selected_fraction": 0.24675849080085754
+        },
+        {
+          "ratio": null,
+          "k": 5,
+          "accuracy": 0.94921875,
+          "sufficiency_probability_delta": 0.057624027132987976,
+          "necessity_probability_delta": 0.0975111871957779,
+          "deletion_fidelity_ap": -0.03310708230237924,
+          "avg_selected_events": 4.927734375,
+          "avg_selected_fraction": 0.39205843210220337
+        },
+        {
+          "ratio": null,
+          "k": 10,
+          "accuracy": 0.98046875,
+          "sufficiency_probability_delta": 0.023711232468485832,
+          "necessity_probability_delta": 0.14000961184501648,
+          "deletion_fidelity_ap": -0.01859646716112595,
+          "avg_selected_events": 9.544921875,
+          "avg_selected_fraction": 0.7152924537658691
+        }
+      ]
+    },
+    {
+      "seed": 27,
+      "model": "LiFTER",
+      "base_ap": 0.8245915024659022,
+      "acc_auc": 0.879296875,
+      "deletion_aufsc": -0.001621392464652128,
+      "sufficiency_auc": 0.09433116167783737,
+      "necessity_auc": 0.11426405161619185,
+      "mean_selected_events": 2.8561197916666665,
+      "mean_available_events": 14.552734375,
+      "mean_selected_fraction": 0.2065342739224434,
+      "explanation_ms_per_query": 0.024119879526551813,
+      "stability_jaccard": 0.9752604166666667,
+      "curves": [
+        {
+          "ratio": 0.05,
+          "k": null,
+          "accuracy": 0.6328125,
+          "sufficiency_probability_delta": 0.2503926157951355,
+          "necessity_probability_delta": 0.04603789746761322,
+          "deletion_fidelity_ap": -0.0028156735972606484,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": 0.1,
+          "k": null,
+          "accuracy": 0.892578125,
+          "sufficiency_probability_delta": 0.09603998064994812,
+          "necessity_probability_delta": 0.0940360426902771,
+          "deletion_fidelity_ap": -0.005395702579992001,
+          "avg_selected_events": 1.826171875,
+          "avg_selected_fraction": 0.1380268633365631
+        },
+        {
+          "ratio": 0.15,
+          "k": null,
+          "accuracy": 0.90234375,
+          "sufficiency_probability_delta": 0.07951797544956207,
+          "necessity_probability_delta": 0.10714360326528549,
+          "deletion_fidelity_ap": -0.0063941370401505715,
+          "avg_selected_events": 2.48828125,
+          "avg_selected_fraction": 0.18100252747535706
+        },
+        {
+          "ratio": 0.2,
+          "k": null,
+          "accuracy": 0.91015625,
+          "sufficiency_probability_delta": 0.07118711620569229,
+          "necessity_probability_delta": 0.1258012354373932,
+          "deletion_fidelity_ap": -0.00559623752791405,
+          "avg_selected_events": 3.220703125,
+          "avg_selected_fraction": 0.23035916686058044
+        },
+        {
+          "ratio": 0.25,
+          "k": null,
+          "accuracy": 0.916015625,
+          "sufficiency_probability_delta": 0.06836441159248352,
+          "necessity_probability_delta": 0.14130139350891113,
+          "deletion_fidelity_ap": 0.0033619711306305256,
+          "avg_selected_events": 3.904296875,
+          "avg_selected_fraction": 0.2747200131416321
+        },
+        {
+          "ratio": 0.3,
+          "k": null,
+          "accuracy": 0.91796875,
+          "sufficiency_probability_delta": 0.06270003318786621,
+          "necessity_probability_delta": 0.1600380688905716,
+          "deletion_fidelity_ap": 0.01464996098559157,
+          "avg_selected_events": 4.697265625,
+          "avg_selected_fraction": 0.33121663331985474
+        }
+      ],
+      "fixed_k_curves": [
+        {
+          "ratio": null,
+          "k": 1,
+          "accuracy": 0.6328125,
+          "sufficiency_probability_delta": 0.2503926157951355,
+          "necessity_probability_delta": 0.04603789746761322,
+          "deletion_fidelity_ap": -0.0028156735972606484,
+          "avg_selected_events": 1.0,
+          "avg_selected_fraction": 0.08388043940067291
+        },
+        {
+          "ratio": null,
+          "k": 2,
+          "accuracy": 0.896484375,
+          "sufficiency_probability_delta": 0.0854019895195961,
+          "necessity_probability_delta": 0.10086314380168915,
+          "deletion_fidelity_ap": -0.003926506100180971,
+          "avg_selected_events": 2.0,
+          "avg_selected_fraction": 0.16776087880134583
+        },
+        {
+          "ratio": null,
+          "k": 3,
+          "accuracy": 0.91015625,
+          "sufficiency_probability_delta": 0.06710389256477356,
+          "necessity_probability_delta": 0.13126829266548157,
+          "deletion_fidelity_ap": -0.0025207478631454894,
+          "avg_selected_events": 2.990234375,
+          "avg_selected_fraction": 0.24675849080085754
+        },
+        {
+          "ratio": null,
+          "k": 5,
+          "accuracy": 0.93359375,
+          "sufficiency_probability_delta": 0.05676000937819481,
+          "necessity_probability_delta": 0.17611344158649445,
+          "deletion_fidelity_ap": 0.015701560887476762,
+          "avg_selected_events": 4.927734375,
+          "avg_selected_fraction": 0.39205843210220337
+        },
+        {
+          "ratio": null,
+          "k": 10,
+          "accuracy": 0.953125,
+          "sufficiency_probability_delta": 0.037702932953834534,
+          "necessity_probability_delta": 0.27107733488082886,
+          "deletion_fidelity_ap": 0.10297600535615814,
+          "avg_selected_events": 9.544921875,
+          "avg_selected_fraction": 0.7152924537658691
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "LiFTER": {
+      "base_ap": {
+        "mean": 0.8259213809250935,
+        "std": 0.004044342766578236
+      },
+      "acc_auc": {
+        "mean": 0.87734375,
+        "std": 0.001953125
+      },
+      "deletion_aufsc": {
+        "mean": 0.0026624837552468535,
+        "std": 0.004443075012197538
+      },
+      "sufficiency_auc": {
+        "mean": 0.0966295540332794,
+        "std": 0.00298949178669362
+      },
+      "necessity_auc": {
+        "mean": 0.11362811277310053,
+        "std": 0.003183225178548909
+      },
+      "mean_available_events": {
+        "mean": 14.552734375,
+        "std": 0.0
+      },
+      "mean_selected_events": {
+        "mean": 2.8561197916666665,
+        "std": 0.0
+      },
+      "mean_selected_fraction": {
+        "mean": 0.2065342739224434,
+        "std": 0.0
+      },
+      "explanation_ms_per_query": {
+        "mean": 0.024014624311045434,
+        "std": 0.00012952541463596927
+      },
+      "stability_jaccard": {
+        "mean": 0.9717881944444445,
+        "std": 0.003977930290760269
+      }
+    },
+    "SIG": {
+      "base_ap": {
+        "mean": 0.7914595732981988,
+        "std": 0.006014364067890043
+      },
+      "acc_auc": {
+        "mean": 0.9123697916666665,
+        "std": 0.0031025397285010014
+      },
+      "deletion_aufsc": {
+        "mean": -0.018047833252137154,
+        "std": 0.008402275923357216
+      },
+      "sufficiency_auc": {
+        "mean": 0.09035598486661911,
+        "std": 0.00357221677897215
+      },
+      "necessity_auc": {
+        "mean": 0.07821790191034476,
+        "std": 0.008130544390024086
+      },
+      "mean_available_events": {
+        "mean": 14.552734375,
+        "std": 0.0
+      },
+      "mean_selected_events": {
+        "mean": 2.8561197916666665,
+        "std": 0.0
+      },
+      "mean_selected_fraction": {
+        "mean": 0.2065342739224434,
+        "std": 0.0
+      },
+      "explanation_ms_per_query": {
+        "mean": 0.008035275338140005,
+        "std": 2.787988559088783e-05
+      },
+      "stability_jaccard": {
+        "mean": 0.900607638888889,
+        "std": 0.005421005206943084
+      }
+    },
+    "TGIB": {
+      "base_ap": {
+        "mean": 0.7976706173100174,
+        "std": 0.01862662593683189
+      },
+      "acc_auc": {
+        "mean": 0.8490885416666666,
+        "std": 0.007340043668002056
+      },
+      "deletion_aufsc": {
+        "mean": 0.00920109320767032,
+        "std": 0.005257240979712271
+      },
+      "sufficiency_auc": {
+        "mean": 0.13721822599569955,
+        "std": 0.006342828453404607
+      },
+      "necessity_auc": {
+        "mean": 0.03707426525652408,
+        "std": 0.0012153671454339765
+      },
+      "mean_available_events": {
+        "mean": 14.552734375,
+        "std": 0.0
+      },
+      "mean_selected_events": {
+        "mean": 2.8561197916666665,
+        "std": 0.0
+      },
+      "mean_selected_fraction": {
+        "mean": 0.2065342739224434,
+        "std": 0.0
+      },
+      "explanation_ms_per_query": {
+        "mean": 0.00461652113396364,
+        "std": 1.1021714961341583e-05
+      },
+      "stability_jaccard": {
+        "mean": 0.9344618055555557,
+        "std": 0.017339396141873402
+      }
+    },
+    "TGN + T-GNNExplainer": {
+      "base_ap": {
+        "mean": 0.79018157568039,
+        "std": 0.004811527349428445
+      },
+      "acc_auc": {
+        "mean": 0.8709635416666668,
+        "std": 0.021317116454595924
+      },
+      "deletion_aufsc": {
+        "mean": 0.002731422766946663,
+        "std": 0.0016270170229066338
+      },
+      "sufficiency_auc": {
+        "mean": 0.12484704454739888,
+        "std": 0.00899462123694499
+      },
+      "necessity_auc": {
+        "mean": 0.057626362020770705,
+        "std": 0.007568623205382054
+      },
+      "mean_available_events": {
+        "mean": 14.552734375,
+        "std": 0.0
+      },
+      "mean_selected_events": {
+        "mean": 2.8561197916666665,
+        "std": 0.0
+      },
+      "mean_selected_fraction": {
+        "mean": 0.2065342739224434,
+        "std": 0.0
+      },
+      "explanation_ms_per_query": {
+        "mean": 83.05209869649843,
+        "std": 2.9244381304859433
+      },
+      "stability_jaccard": {
+        "mean": 0.6145833333333334,
+        "std": 0.026333005750203985
+      }
+    },
+    "TGN + TempME": {
+      "base_ap": {
+        "mean": 0.79018157568039,
+        "std": 0.004811527349428445
+      },
+      "acc_auc": {
+        "mean": 0.7001953124999999,
+        "std": 0.021856681783249243
+      },
+      "deletion_aufsc": {
+        "mean": -0.0014376928253396655,
+        "std": 0.005196859429743295
+      },
+      "sufficiency_auc": {
+        "mean": 0.26382139424482975,
+        "std": 0.021638285134103295
+      },
+      "necessity_auc": {
+        "mean": 0.03273059831311305,
+        "std": 0.004970636685599118
+      },
+      "mean_available_events": {
+        "mean": 14.552734375,
+        "std": 0.0
+      },
+      "mean_selected_events": {
+        "mean": 2.8561197916666665,
+        "std": 0.0
+      },
+      "mean_selected_fraction": {
+        "mean": 0.2065342739224434,
+        "std": 0.0
+      },
+      "explanation_ms_per_query": {
+        "mean": 0.006941723161920284,
+        "std": 0.0014015214605126326
+      },
+      "stability_jaccard": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    }
+  }
+}

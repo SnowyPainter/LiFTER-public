@@ -1,0 +1,41 @@
+seed: 7
+seeds:
+  - 7
+  - 17
+  - 27
+dataset: wikipedia
+model: DyGFormer
+variant: base
+implementation: reference
+device: auto
+
+training:
+  epochs: 3
+  batch_size: 128
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  dropout: 0.1
+  history_len: 320
+  eval_ratio: 0.15
+  max_examples: 32768
+  progress: true
+
+model_config:
+  num_nodes: auto
+  edge_feat_dim: 1
+  hidden_dim: 64
+  time_dim: 32
+  aggregation_operator: multiscale_kernel
+  neural_history_len: 20
+  recurrence_scale_count: 4
+  recurrence_scale_init: full
+  learnable_recurrence_scales: false
+  recurrence_evidence_mode: mass
+
+attention:
+  gate_init: 0.95
+  gate_leak: 0.05
+
+paths:
+  processed_root: data/processed
+  output: experiments/main_benchmark/outputs

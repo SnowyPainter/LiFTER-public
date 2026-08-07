@@ -1,0 +1,7 @@
+{
+  "batch_permutation_max_abs_error": 0.0,
+  "candidate_call_state_max_abs_error": 0.0,
+  "outside_history_window_max_abs_error": 0.0,
+  "future_timestamp_rejected": true,
+  "passed": true
+}

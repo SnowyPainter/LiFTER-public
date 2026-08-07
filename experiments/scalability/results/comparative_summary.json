@@ -1,0 +1,142 @@
+{
+  "device": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "protocol": {
+    "history_per_endpoint": 10,
+    "random_weights_for_latency_only": true
+  },
+  "forecasting": [
+    {
+      "model": "TGN",
+      "batch": 32,
+      "history_per_endpoint": 10,
+      "latency_ms": 2.1653144309918084,
+      "queries_per_second": 14778.454132106164
+    },
+    {
+      "model": "TGAT",
+      "batch": 32,
+      "history_per_endpoint": 10,
+      "latency_ms": 1.0533956810832024,
+      "queries_per_second": 30377.948737263225
+    },
+    {
+      "model": "DyGFormer",
+      "batch": 32,
+      "history_per_endpoint": 10,
+      "latency_ms": 1.7804635378221672,
+      "queries_per_second": 17972.847699617516
+    },
+    {
+      "model": "GraphMixer",
+      "batch": 32,
+      "history_per_endpoint": 10,
+      "latency_ms": 1.5584281645715237,
+      "queries_per_second": 20533.50980652876
+    },
+    {
+      "model": "CRAFT",
+      "batch": 32,
+      "history_per_endpoint": 10,
+      "latency_ms": 1.1003754722575347,
+      "queries_per_second": 29080.98263436268
+    },
+    {
+      "model": "LiFTER",
+      "batch": 32,
+      "history_per_endpoint": 10,
+      "latency_ms": 4.0690832150479155,
+      "queries_per_second": 7864.179302517209
+    },
+    {
+      "model": "TGN",
+      "batch": 128,
+      "history_per_endpoint": 10,
+      "latency_ms": 2.1502509092291198,
+      "queries_per_second": 59527.9366936247
+    },
+    {
+      "model": "TGAT",
+      "batch": 128,
+      "history_per_endpoint": 10,
+      "latency_ms": 1.0328480663398902,
+      "queries_per_second": 123929.16651680857
+    },
+    {
+      "model": "DyGFormer",
+      "batch": 128,
+      "history_per_endpoint": 10,
+      "latency_ms": 1.690880550692479,
+      "queries_per_second": 75700.20244634029
+    },
+    {
+      "model": "GraphMixer",
+      "batch": 128,
+      "history_per_endpoint": 10,
+      "latency_ms": 1.5548719093203545,
+      "queries_per_second": 82321.89367672718
+    },
+    {
+      "model": "CRAFT",
+      "batch": 128,
+      "history_per_endpoint": 10,
+      "latency_ms": 1.10176516075929,
+      "queries_per_second": 116177.2077742845
+    },
+    {
+      "model": "LiFTER",
+      "batch": 128,
+      "history_per_endpoint": 10,
+      "latency_ms": 4.805712805440028,
+      "queries_per_second": 26634.96658708049
+    },
+    {
+      "model": "TGN",
+      "batch": 512,
+      "history_per_endpoint": 10,
+      "latency_ms": 2.188056086500486,
+      "queries_per_second": 233997.65808511706
+    },
+    {
+      "model": "TGAT",
+      "batch": 512,
+      "history_per_endpoint": 10,
+      "latency_ms": 1.0513269032041233,
+      "queries_per_second": 487003.6127103572
+    },
+    {
+      "model": "DyGFormer",
+      "batch": 512,
+      "history_per_endpoint": 10,
+      "latency_ms": 1.710865491380294,
+      "queries_per_second": 299263.7367341649
+    },
+    {
+      "model": "GraphMixer",
+      "batch": 512,
+      "history_per_endpoint": 10,
+      "latency_ms": 1.5738353443642457,
+      "queries_per_second": 325319.9274202496
+    },
+    {
+      "model": "CRAFT",
+      "batch": 512,
+      "history_per_endpoint": 10,
+      "latency_ms": 1.123662106692791,
+      "queries_per_second": 455652.99118872994
+    },
+    {
+      "model": "LiFTER",
+      "batch": 512,
+      "history_per_endpoint": 10,
+      "latency_ms": 7.653057420005401,
+      "queries_per_second": 66901.36659129348
+    }
+  ],
+  "explanation_macro_ms_per_query": {
+    "LiFTER": 0.024100924444307264,
+    "SIG": 0.008080777358069705,
+    "TGIB": 0.004647527930501383,
+    "TGN + T-GNNExplainer": 91.5325434158755,
+    "TGN + TempME": 0.0059959193094982766
+  }
+}

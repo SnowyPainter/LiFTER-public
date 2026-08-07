@@ -1,0 +1,149 @@
+experiment:
+  seed: 2026
+  implementation: reference
+  compare_attention:
+    - false
+    - true
+  attention:
+    gate_init: 0.95
+    gate_leak: 0.05
+    aux_weight: 0.0
+
+paths:
+  raw_root: data/raw
+  processed_root: data/processed
+  external_root: external
+
+runtime:
+  default_implementation: reference
+  fallback_implementation: reference
+  official_inputs_required:
+    TGAT:
+      - node_raw_features
+      - edge_raw_features
+      - neighbor_sampler
+    DyGFormer:
+      - node_raw_features
+      - edge_raw_features
+      - neighbor_sampler
+    GraphMixer:
+      - node_raw_features
+      - edge_raw_features
+      - neighbor_sampler
+    xERTE:
+      - ngh_finder
+
+datasets:
+  ctdg:
+    task: link_prediction
+    files:
+      wikipedia: data/processed/ctdg/wikipedia/events.csv
+      reddit: data/processed/ctdg/reddit/events.csv
+      mooc: data/processed/ctdg/mooc/events.csv
+      lastfm: data/processed/ctdg/lastfm/events.csv
+      actmooc: data/processed/ctdg/actmooc/events.csv
+    skipped_manual:
+      starcraft: data/raw/ctdg/starcraft
+      lanl: data/raw/ctdg/lanl
+  mtpp:
+    task: marked_temporal_point_process
+    files:
+      stackoverflow: data/processed/mtpp/stackoverflow/events.csv
+      retweets: data/processed/mtpp/retweets/events.csv
+  stpp:
+    task: spatio_temporal_point_process
+    files:
+      earthquake: data/processed/stpp/earthquake/events.csv
+      gowalla: data/processed/stpp/gowalla/events.csv
+  tkg:
+    task: temporal_knowledge_graph_forecasting
+    files:
+      icews14: data/processed/tkg/icews14/facts.csv
+      icews18: data/processed/tkg/icews18/facts.csv
+      gdelt: data/processed/tkg/gdelt/facts.csv
+  rag:
+    task: long_context_evidence_selection
+    files:
+      hotpotqa: data/processed/rag/hotpotqa/examples.jsonl
+
+models:
+  ctdg:
+    TGAT:
+      num_nodes: 1284614
+      edge_feat_dim: 1
+      hidden_dim: 128
+      time_dim: 32
+    DyGFormer:
+      num_nodes: 1284614
+      edge_feat_dim: 1
+      hidden_dim: 128
+      time_dim: 32
+      num_layers: 2
+    GraphMixer:
+      num_nodes: 1284614
+      edge_feat_dim: 1
+      hidden_dim: 128
+      time_dim: 32
+      mixer_layers: 2
+  mtpp:
+    SAHP:
+      num_event_types: 22
+      hidden_dim: 128
+      time_dim: 32
+    THP:
+      num_event_types: 22
+      hidden_dim: 128
+      time_dim: 32
+      num_layers: 2
+    AttNHP:
+      num_event_types: 22
+      hidden_dim: 128
+      time_dim: 32
+      num_heads: 4
+  stpp:
+    Transformer-STPP:
+      num_marks: 1280969
+      hidden_dim: 128
+      time_dim: 32
+      num_layers: 2
+    NSTPP:
+      hidden_dim: 128
+      time_dim: 32
+      dim: 2
+    DeepSTPP:
+      hidden_dim: 128
+      seq_len: 32
+      num_points: 32
+  tkg:
+    RE-NET:
+      num_entities: 23033
+      num_relations: 260
+      hidden_dim: 128
+      time_dim: 32
+    xERTE:
+      num_entities: 23033
+      num_relations: 260
+      hidden_dim: 128
+      expansion_layers: 2
+    CyGNet:
+      num_entities: 23033
+      num_relations: 260
+      hidden_dim: 128
+      time_dim: 32
+  rag:
+    FiD:
+      vocab_size: 32128
+      hidden_dim: 256
+      fusion_layers: 2
+    LED:
+      vocab_size: 50265
+      hidden_dim: 256
+      encoder_layers: 2
+
+variants:
+  base:
+    implementation: reference
+    use_attention: false
+  attention:
+    implementation: reference
+    use_attention: true

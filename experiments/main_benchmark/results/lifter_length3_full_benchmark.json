@@ -1,0 +1,60 @@
+{
+  "model": "LiFTER",
+  "max_rule_length": 3,
+  "candidate_clauses": 624,
+  "datasets": ["wikipedia", "reddit", "mooc", "lastfm"],
+  "seeds": [7, 17, 27],
+  "max_examples": 32768,
+  "epochs": 10,
+  "split": "chronological 85/15",
+  "training_negative": "random destination",
+  "historical_negative": "most recent prior destination of the query source excluding the current positive; random fallback when unavailable",
+  "results": {
+    "wikipedia": {
+      "random_auc_mean": 0.9704178352,
+      "random_auc_std": 0.0014063286,
+      "random_ap_mean": 0.9759953946,
+      "random_ap_std": 0.0012019296,
+      "historical_auc_mean": 0.8505988069,
+      "historical_auc_std": 0.0041456858,
+      "historical_ap_mean": 0.8096369368,
+      "historical_ap_std": 0.0055143403,
+      "historical_coverage": 0.5109845403
+    },
+    "reddit": {
+      "random_auc_mean": 0.9483700594,
+      "random_auc_std": 0.0007758002,
+      "random_ap_mean": 0.9549921539,
+      "random_ap_std": 0.0009881262,
+      "historical_auc_mean": 0.7993616806,
+      "historical_auc_std": 0.0021348221,
+      "historical_ap_mean": 0.7614858476,
+      "historical_ap_std": 0.0025323260,
+      "historical_coverage": 0.4888120423
+    },
+    "mooc": {
+      "random_auc_mean": 0.9003433572,
+      "random_auc_std": 0.0015866970,
+      "random_ap_mean": 0.8962194686,
+      "random_ap_std": 0.0018879367,
+      "historical_auc_mean": 0.5492664063,
+      "historical_auc_std": 0.0106651565,
+      "historical_ap_mean": 0.5370581795,
+      "historical_ap_std": 0.0127169210,
+      "historical_coverage": 0.9768104150
+    },
+    "lastfm": {
+      "random_auc_mean": 0.8512538170,
+      "random_auc_std": 0.0039498798,
+      "random_ap_mean": 0.8776156881,
+      "random_ap_std": 0.0023952557,
+      "historical_auc_mean": 0.3403398067,
+      "historical_auc_std": 0.0005892467,
+      "historical_ap_mean": 0.4447908647,
+      "historical_ap_std": 0.0002807395,
+      "historical_coverage": 0.9969487388
+    }
+  },
+  "maximum_absolute_hard_soft_ap_gap": 0.0029309383,
+  "raw_outputs": "../outputs"
+}
